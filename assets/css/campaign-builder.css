@@ -1,13 +1,78 @@
-.clickable {
-    position: relative;
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.parent-div {
+        position: relative;
 }
 .layout-hover{
 border: 1px dashed lightgrey;
     padding-top: 30px;
     padding-bottom: 30px;
+    	background-color: rgba(63, 187, 118, 0.17);
 }
  .layoutAction {
             position: absolute;
             top: 0;
             right: 0;
         }
+.layoutAction > div {
+    display: block;
+        margin-bottom: 5px;
+}
+.layoutAction > div img {
+    width: 100%;
+    height: auto;
+}
+    .delete-handle, .drag-handle {
+                background-color: #3fbb76;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 36px;
+    vertical-align: middle;
+    height: 36px;
+    display: inline-block;
+            cursor: pointer;
+        }
+
+/*Card Chip*/
+.activefill {
+     fill: #F1F1F1;
+}
+text.activefill{
+    fill: rgba(0,0,0,.3);
+}
+.card-chip:hover .activefill,
+.card-chip:focus .activefill{
+    fill: #3FBB76;
+}
+
+.empty-content {
+    color: #1b72f8;
+    font-size: 12px;
+}
+
+
+/*Right Side menu*/
+
+.right-menu {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+.card-action{
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    left: 100%;
+    top: 0;
+    transition: all linear 0.25s;
+    -webkit-transition: all linear 0.25s;
+    -moz-transition: all linear 0.25s;
+    -o-transition: all linear 0.25s;
+}
+.card-action.in{
+    left: 0%;
+}

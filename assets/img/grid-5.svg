@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="303" height="40" viewBox="0 0 303 40">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#F1F1F1" d="M0 0h303v40H0z"/>
+        <path fill="#FFF" d="M10 10h87.67v20H10z"/>
+        <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
+            <tspan x="43" y="24">33%</tspan>
+        </text>
+        <path fill="#FFF" d="M108 10h87.67v20H108z"/>
+        <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
+            <tspan x="141" y="24">33%</tspan>
+        </text>
+        <path fill="#FFF" d="M205 10h87.67v20H205z"/>
+        <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
+            <tspan x="238" y="24">33%</tspan>
+        </text>
+    </g>
+</svg>

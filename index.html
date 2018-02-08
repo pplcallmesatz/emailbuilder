@@ -13,8 +13,10 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
     <!-- Latest compiled and minified CSS -->
+<!--
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     
+-->
 <!--    Font Awesome icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -44,16 +46,7 @@
         table tr td {
             padding: 15px
         }
-        .delete-handle {
-                background-color: red;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 36px;
-    vertical-align: middle;
-    height: 36px;
-    display: inline-block;
-            cursor: pointer;
-        }
+    
        
     </style>
 </head>
@@ -69,65 +62,193 @@
         <div id="cards-box" class="flex-box">
             <!-- Card Box -->
             <div class="flex-grow-1"  style="" id="cards">
-                <div class="drag-here">Drag and D rop Content Cards to Create your Page</div>
+<!--                <div class="drag-here">Drag and D rop Content Cards to Create your Page</div>-->
 
             </div>
             <!-- Cards Title -->
             <div class="right-menu">
-                <div id="cards-title" class="media-bg">
-                    <div data-card="#gridOne" class="card-chip"><img src="st/icon-media.png"><span class="hidden-xs">Media</span>
+                <div id="cards-title" class="media-bg" src="assets/img/move.svg">
+                    
+                    
+            <div data-card="#gridOne" class="card-chip">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="318" height="58" viewBox="0 0 318 58">
+        <defs>
+            <path id="b" d="M0 0h303v40H0z" />
+            
+        </defs>
+        <g fill="none" fill-rule="evenodd">
+            <g transform="translate(9 8)">
+                <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                <use class="activefill" xlink:href="#b" />
+            </g>
+            <path fill="#FFF" d="M19 18h283v20H19z" />
+            <text fill="#3FBB76" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" transform="translate(9 8)" class="activefill">
+                <tspan x="138" y="24">100%</tspan>
+            </text>
+        </g>
+    </svg>
+</div>
+                    <div data-card="#gridTwo" class="card-chip">
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="303" height="40" viewBox="0 0 303 40">
+        <g fill="none" fill-rule="evenodd">
+            <path class="activefill" d="M0 0h303v40H0z" />
+            <path fill="#FFF" d="M10 10h136.5v20H10z" />
+            <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" >
+                <tspan x="67" y="24">50%</tspan>
+            </text>
+            <path fill="#FFF" d="M157 10h136.5v20H157z" />
+            <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" >
+                <tspan x="213" y="24">50%</tspan>
+            </text>
+        </g>
+    </svg>
+
+
+</div> 
+                    <div data-card="#gridThree-3367" class="card-chip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="303" height="40" viewBox="0 0 303 40">
+    <g fill="none" fill-rule="evenodd">
+        <path class="activefill" d="M0 0h303v40H0z"/>
+        <path fill="#FFF" d="M10 10h97v20H10z"/>
+        <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
+            <tspan x="47" y="24">33%</tspan>
+        </text>
+        <path fill="#FFF" d="M117 10h176v20H117z"/>
+        <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+            <tspan x="194" y="24">66%</tspan>
+        </text>
+    </g>
+</svg>
                     </div>
-                    <div data-card="#gridTwo" class="card-chip"><img src="st/icon-text.png"><span class="hidden-xs">Text</span>
+                    <div data-card="#gridFour-6733" class="card-chip">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="303" height="40" viewBox="0 0 303 40">
+    <g fill="none" fill-rule="evenodd">
+        <path class="activefill" d="M0 0h303v40H0z"/>
+        <path fill="#FFF" d="M196 10h97v20h-97z"/>
+        <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+            <tspan x="233" y="24">33%</tspan>
+        </text>
+        <path fill="#FFF" d="M10 10h176v20H10z"/>
+        <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
+            <tspan x="87" y="24">66%</tspan>
+        </text>
+    </g>
+</svg>
+
+                        
+                        
                     </div>
-                    <div data-card="#gridThree-3367" class="card-chip"><img src="st/icon-contact.png"><span class="hidden-xs">Contact</span>
+                    <div data-card="#gridFive-33" class="card-chip">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="303" height="40" viewBox="0 0 303 40">
+    <g fill="none" fill-rule="evenodd">
+        <path class="activefill" d="M0 0h303v40H0z"/>
+        <path fill="#FFF" d="M10 10h87.67v20H10z"/>
+        <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
+            <tspan x="43" y="24">33%</tspan>
+        </text>
+        <path fill="#FFF" d="M108 10h87.67v20H108z"/>
+        <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
+            <tspan x="141" y="24">33%</tspan>
+        </text>
+        <path fill="#FFF" d="M205 10h87.67v20H205z"/>
+        <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+            <tspan x="238" y="24">33%</tspan>
+        </text>
+    </g>
+</svg>
+
                     </div>
-                    <div data-card="#gridFour-6733" class="card-chip"><img src="st/icon-document.png"><span class="hidden-xs">Document</span>
-                    </div>
-                    <div data-card="#gridFive-33" class="card-chip"><img src="st/icon-links.png"><span class="hidden-xs">Links</span>
-                    </div>
-                    <div data-card="#gridFive-25" class="card-chip"><img src="st/icon-category.png"><span class="hidden-xs">Category</span>
+        <div data-card="#gridFive-25" class="card-chip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="303" height="40" viewBox="0 0 303 40">
+    <g fill="none" fill-rule="evenodd">
+        <path class="activefill" d="M0 0h303v40H0z"/>
+        <path fill="#FFF" d="M10 10h63.25v20H10z"/>
+        <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+            <tspan x="31" y="24">25%</tspan>
+        </text>
+        <path fill="#FFF" d="M83 10h63.25v20H83z"/>
+        <text class="activefill"  font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+            <tspan x="103" y="24">25%</tspan>
+        </text>
+        <path fill="#FFF" d="M157 10h63.25v20H157z"/>
+        <text class="activefill"  font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+            <tspan x="177" y="24">25%</tspan>
+        </text>
+        <path fill="#FFF" d="M230 10h63.25v20H230z"/>
+        <text class="activefill"  font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+            <tspan x="250" y="24">25%</tspan>
+        </text>
+    </g>
+</svg>
+
                     </div>
                 </div>
+                <div class="card-action"></div>
 
             </div>
         </div>
     </div>
+    
 
 <!--    One grid-->
     <div id="gridOne" class="hide-card">
+        <div class="layoutAction"><div class="drag-handle"><img src="assets/img/move.svg"></div><a class="delete-handle"  onclick="deleteLayout($(this))"><img src="assets/img/trash.svg"></a></div>
     <table style="width: 600px; margin:0 auto; table-layout: fixed; border: none;">
         <tr>
-        <td>100%</td>
+        <td>
+          
+            </td>
         </tr>
         </table>
     </div>
     
     <!--    Two grid 50%-->
     <div id="gridTwo" class="hide-card">
-    <table style="width: 600px; margin:0 auto; table-layout: fixed; border: none;">
+    <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none;">
         <tr>
-        <td style="width: 300px">50%</td>
-        <td style="width: 300px">50%</td>
+        <td style="width: 300px">
+            
+          
+            </td>
+        <td style="width: 300px">
+            
+           
+            
+            </td>
         </tr>
         </table>
     </div>
         
     <!--    Third grid 33% 67%-->
     <div id="gridThree-3367" class="hide-card">
-    <table style="width: 600px; margin:0 auto; table-layout: fixed; border: none;">
+    <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none;">
         <tr>
-        <td style="width: 198px">33%</td>
-        <td style="width: 402px">67%</td>
+        <td style="width: 198px">
+            
+         
+            
+            </td>
+        <td style="width: 402px">
+    
+            
+            </td>
         </tr>
         </table>
     </div>
     
        <!--    Fourth grid  67% 33% -->
     <div id="gridFour-6733" class="hide-card">
-    <table style="width: 600px; margin:0 auto; table-layout: fixed; border: none;">
+    <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none;">
         <tr>
-            <td style="width: 402px">67%</td>
-            <td style="width: 198px">33%</td>
+            <td style="width: 402px">
+           
+            </td>
+            <td style="width: 198px">
+           
+            </td>
         </tr>
         </table>
     </div>
@@ -135,23 +256,37 @@
     
      <!--    Fifth grid 33% 33% 33% -->
     <div id="gridFive-33" class="hide-card">
-    <table style="width: 600px; margin:0 auto; table-layout: fixed; border: none;">
+    <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none;">
         <tr>
-            <td style="width: 200px">33%</td>
-            <td style="width: 200px">33%</td>
-            <td style="width: 200px">33%</td>
+            <td style="width: 200px">
+        
+            </td>
+            <td style="width: 200px">
+            
+            </td>
+            <td style="width: 200px">
+        
+            </td>
         </tr>
         </table>
     </div>
     
     <!--    Sixth grid 25% 25% 25% 25% -->
     <div id="gridFive-25" class="hide-card">
-    <table style="width: 600px; margin:0 auto; table-layout: fixed; border: none;">
+    <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none;">
         <tr>
-            <td style="width: 150px">25%</td>
-            <td style="width: 150px">25%</td>
-            <td style="width: 150px">25%</td>
-            <td style="width: 150px">25%</td>
+            <td style="width: 150px">
+           
+            </td>
+            <td style="width: 150px">
+           
+            </td>
+            <td style="width: 150px">
+           
+            </td>
+            <td style="width: 150px">
+           
+            </td>
         </tr>
         </table>
     </div>
