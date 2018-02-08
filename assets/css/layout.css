@@ -1,0 +1,221 @@
+body {
+    background-color: #eeeeee;
+    font-family: 'Open Sans', sans-serif;
+}
+#cards {
+    padding-right: 5px;
+}
+#cards .panel,
+.media-bg,
+#cards .card-chip {
+    background-color: white;
+    box-shadow: 0 0 12px lightgrey !important;
+    border: 0;
+    border-radius: 0;
+}
+#cards .panel-heading {
+    padding: 25px 15px;
+    background-color: #fafafa;
+    color: #a5a5a5;
+    border-bottom: 1px solid #efefef;
+}
+#cards .panel-heading h3 {
+    font-weight: 100;
+    font-size: 1.5em;
+}
+#cards .panel-footer {
+    background-color: transparent;
+    border-top: 0;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#cards .panel-footer .btn {
+    background-color: white;
+    color: #139ec7;
+    border: 2px solid #139ec7;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+#cards .panel-footer .btn:hover{
+    background-color: #139ec7;
+    color: white;
+}
+#cards .card-chip {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    
+}
+.hide-card {
+    display: none;
+}
+.show-card {
+    display: block;
+}
+.drag-here {
+    padding: 45px 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px dashed lightgrey;
+    color: grey;
+}
+.panel-title-controls {
+    float: right;
+    margin-top: -7px;    
+}
+.drag-handle {
+    cursor: pointer;
+}
+.panel-title-controls img {
+    border-radius: 50%;
+    border: 1px solid #bfbfbf;
+}
+.panel-title-controls .drag-handle img {
+    margin-left: 15px;
+}
+.drop-down img {
+    margin-right: 13px;
+}
+.panel-title-controls img:hover {
+    border: 1px solid #139ec7;
+}
+.cards-frame-th {
+    height: 200px;
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+.cards-frame-th i {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+.cards-frame-controls table,
+.cards-frame-description {
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+.cards-frame-description {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+.cards-frame-controls table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.cards-frame-controls table tr td {
+    width: 50%;
+}
+.cards-frame-controls table tr td a {
+    padding: 8px 10px;
+    color: #139ec7;
+    display: block;
+}
+.cards-frame-controls table tr td a:hover {
+    background-color: #139ec7;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.cards-frame-controls table tr td:last-child {
+    border-left: 1px solid #efefef;
+}
+.cards-frame-controls table tr td:last-child a {
+    color: #e93939;
+}
+.cards-frame-controls table tr td:last-child a:hover {
+    background-color: #e93939;
+    color: white;
+}
+
+.card-no-contents {
+    text-align: center;
+    color: #b9b9b9;
+    height: 80px;
+    padding-top: 50px;
+}
+
+/*Card Chips*/
+#cards-title .card-chip {
+    padding: 15px;
+    border-bottom: 1px solid #efefef;
+    color: grey;
+}
+#cards-title .card-chip:last-child {
+    border-bottom: 0;
+}
+#cards-title .card-chip:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+    color: #139ec7;
+}
+#cards-title img {
+    border-radius: 50%;
+    border: 1px solid #eeeeee;
+}
+#cards-title div:hover img {
+    border: 1px solid #139ec7;
+}
+
+
+@media(max-width:450px) {
+    #cards-title .card-chip {
+        padding: 10px 5px;
+    }
+    .panel-title-controls {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #eeeeee;
+        float: none;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 5px;
+        padding-bottom: 15px;
+    }
+    #cards .panel-heading {
+        padding-bottom: 5px;
+    }
+    #cards .panel-heading h3 {
+        font-size: 1em;
+        text-align: center;
+    }
+    #cards .panel-footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #cards .panel-footer .btn {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+@media(max-width:767px) {
+    #cards-title {
+        text-align: center;
+    }
+}
+@media(min-width:768px) {
+    #cards-title img {
+        margin-right: 10px;
+    }
+    .cards-frame-description {
+        height: 100px;
+        overflow-y: scroll;
+    }
+}

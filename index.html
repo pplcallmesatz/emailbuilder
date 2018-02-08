@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:image" content="/st/og-image.png" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--    Googe Font - Open Sans-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+<!--    Font Awesome icons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/campaign-builder.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+
+    
+    <style>
+        .flex-box{
+            display: flex;
+        }
+        .right-menu {
+            width: 350px;
+            flex-shrink: 0;
+        }
+        .flex-grow-1 {
+            flex-grow: 1;
+        }
+        table {
+            background-color: #fff;
+            text-align: center;
+        }
+        table tr td {
+            padding: 15px
+        }
+        .delete-handle {
+                background-color: red;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 36px;
+    vertical-align: middle;
+    height: 36px;
+    display: inline-block;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <!-- Cards Box -->
+        <div id="cards-box" class="flex-box">
+            <!-- Card Box -->
+            <div class="flex-grow-1"  style="" id="cards">
+                <div class="drag-here">Drag and Drop Content Cards to Create your Page</div>
+
+            </div>
+            <!-- Cards Title -->
+            <div class="right-menu">
+                <div id="cards-title" class="media-bg">
+                    <div data-card="#gridOne" class="card-chip"><img src="st/icon-media.png"><span class="hidden-xs">Media</span>
+                    </div>
+                    <div data-card="#gridTwo" class="card-chip"><img src="st/icon-text.png"><span class="hidden-xs">Text</span>
+                    </div>
+                    <div data-card="#gridThree-3367" class="card-chip"><img src="st/icon-contact.png"><span class="hidden-xs">Contact</span>
+                    </div>
+                    <div data-card="#gridFour-6733" class="card-chip"><img src="st/icon-document.png"><span class="hidden-xs">Document</span>
+                    </div>
+                    <div data-card="#gridFive-33" class="card-chip"><img src="st/icon-links.png"><span class="hidden-xs">Links</span>
+                    </div>
+                    <div data-card="#gridFive-25" class="card-chip"><img src="st/icon-category.png"><span class="hidden-xs">Category</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!--    One grid-->
+    <div id="gridOne" class="hide-card">
+    <table style="width: 600px; margin:0 auto; table-layout: fixed; border: none;">
+        <tr>
+        <td>100%</td>
+        </tr>
+        </table>
+    </div>
+    
+    <!--    Two grid 50%-->
+    <div id="gridTwo" class="hide-card">
+    <table style="width: 600px; margin:0 auto; table-layout: fixed; border: none;">
+        <tr>
+        <td style="width: 300px">50%</td>
+        <td style="width: 300px">50%</td>
+        </tr>
+        </table>
+    </div>
+        
+    <!--    Third grid 33% 67%-->
+    <div id="gridThree-3367" class="hide-card">
+    <table style="width: 600px; margin:0 auto; table-layout: fixed; border: none;">
+        <tr>
+        <td style="width: 198px">33%</td>
+        <td style="width: 402px">67%</td>
+        </tr>
+        </table>
+    </div>
+    
+       <!--    Fourth grid  67% 33% -->
+    <div id="gridFour-6733" class="hide-card">
+    <table style="width: 600px; margin:0 auto; table-layout: fixed; border: none;">
+        <tr>
+            <td style="width: 402px">67%</td>
+            <td style="width: 198px">33%</td>
+        </tr>
+        </table>
+    </div>
+    
+    
+     <!--    Fifth grid 33% 33% 33% -->
+    <div id="gridFive-33" class="hide-card">
+    <table style="width: 600px; margin:0 auto; table-layout: fixed; border: none;">
+        <tr>
+            <td style="width: 200px">33%</td>
+            <td style="width: 200px">33%</td>
+            <td style="width: 200px">33%</td>
+        </tr>
+        </table>
+    </div>
+    
+    <!--    Sixth grid 25% 25% 25% 25% -->
+    <div id="gridFive-25" class="hide-card">
+    <table style="width: 600px; margin:0 auto; table-layout: fixed; border: none;">
+        <tr>
+            <td style="width: 150px">25%</td>
+            <td style="width: 150px">25%</td>
+            <td style="width: 150px">25%</td>
+            <td style="width: 150px">25%</td>
+        </tr>
+        </table>
+    </div>
+    
+    
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+    <script src="assets/js/Sortable.min.js"></script>
+    
+    <script src="assets/js/draganddrop.js"></script>
+    
+    <script src="assets/js/campaign-creat.js"></script>
+
+</body>
+
+</html>

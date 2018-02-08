@@ -1,0 +1,13 @@
+.clickable {
+    position: relative;
+}
+.layout-hover{
+border: 1px dashed lightgrey;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+ .layoutAction {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
