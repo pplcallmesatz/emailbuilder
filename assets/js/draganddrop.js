@@ -47,7 +47,7 @@ pageEmptyContent();
 function pageEmptyContent(e){
     var initial = $("#cards .parent-div").length;
     
-    console.log(initial);
+//    console.log(initial);
                     
                     var pageEmpty = "<div class=\"drag-here\">Drag and D rop Content Cards to Create your Page</div>";
                     if(initial > 0) {

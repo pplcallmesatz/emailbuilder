@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="147" height="100" viewBox="0 0 147 100">
+    <g fill="#1B72F8" fill-rule="evenodd">
+        <path d="M0 0h146.5v100H0z" opacity=".1"/>
+        <path d="M56 25h38a1 1 0 0 1 0 2H56a1 1 0 1 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 1 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 1 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h25a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2z"/>
+        <text font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="16" font-style="condensed" letter-spacing=".234">
+            <tspan x="58.48" y="91">Text</tspan>
+        </text>
+    </g>
+</svg>

@@ -10,8 +10,8 @@ var clickable = $(".clickable"),
     emptyContent = $(".empty-content"),
     layoutAction = $(".layoutAction"),
 
-    rightMenu = $(".right-menu");
-    
+    rightMenu = $(".right-menu"),
+    topNav = $(".topnav");
 
 
 
@@ -37,19 +37,76 @@ function addLayoutSettingElement(e) {
 function deleteLayout(e){
      var s= $(e).parent().parent().remove();
     pageEmptyContent();
+    
+    tabposition("layouts");
 }
+
+
+
+
+
+   
+// Right side menu
+function tabposition(e){
+    if (e == "layouts"){
+        topNav.attr("data-position","layouts");
+        rightMenuTab(e)
+    }
+    else if (e == "settings"){
+        topNav.attr("data-position","settings");
+        rightMenuTab(e)
+    }
+     else if (e == "blocks"){
+        topNav.attr("data-position","blocks");
+         rightMenuTab(e)
+    }
+}
+ function rightMenuTab(e){
+         var activeTab=$(e).attr("data-tab");
+        $(e).parent().parent().attr("data-position", activeTab);
+        
+
+//            blocks
+             if(((activeTab != "layouts") && (activeTab === "blocks"))   || (e === "blocks")) {
+                 
+//                  console.log(e);
+                      $("[data-target=\"blocks\"]").addClass("in");
+                      
+                          $("[data-target=\"settings\"]").removeClass("in");
+             }            
+            
+              else if ((activeTab != "layouts") && (activeTab === "settings") || (e == "settings")) {
+                $("[data-target=\"settings\"]").addClass("in");
+            }
+          
+                  
+                 else {
+                     $("[data-target=\"blocks\"]").removeClass("in");
+                     $("[data-target=\"settings\"]").removeClass("in");
+                 }
+        }
+
 
 //Show the content menu
 function showContentMenu(e){
-    console.log(e.target);
-    rightMenu.find(".card-action").addClass("in");
-    
+    tabposition("blocks");
+    clickableParent(e)
 }
-   
 
 
-
-
+//Clickable class to parent-div
+function clickableParent(e){
+    
+    var d = $(e).parents().eq(4).css("background","red");
+    
+    console.log(d);
+//   console.log($(e).parent().attr);
+    parentDiv.each(function(){
+        if (e.target === this){
+            console.log("asmple");
+        }
+    })
+}
 
 
 
@@ -61,9 +118,7 @@ $(document).ready(function(){
         });
         
         
-        $(".clickable").hover(function(){
-
-        });        
+                
 });
     
     
@@ -80,7 +135,12 @@ $(document).ready(function(){
       
   });
 
-    
+
+    //Right side menu
+
+    $(".navItem").click(function(){
+        rightMenuTab(this);
+    });
  
 
  

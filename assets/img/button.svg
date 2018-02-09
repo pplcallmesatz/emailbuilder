@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="100" viewBox="0 0 147 100">
+    <defs>
+        <path id="a" d="M53 24.5V33h-2v-8.5L44 28l8-16 8 16-7-3.5z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#F8F8F8" d="M0 0h146.5v100H0z"/>
+        <path fill="#979797" d="M51.5 34h44c5.799 0 10.5 4.701 10.5 10.5S101.299 55 95.5 55h-44C45.701 55 41 50.299 41 44.5S45.701 34 51.5 34zm4.115 8.885a1.615 1.615 0 1 0 0 3.23h36.636a1.615 1.615 0 0 0 0-3.23H55.615z" opacity=".4"/>
+        <g transform="rotate(-45 113.542 -9.991)">
+            <use fill="#D0D0D0" xlink:href="#a"/>
+            <path stroke="#F8F8F8" d="M53.5 25.309V33.5h-3v-8.191l-7.618 3.809L52 10.882l9.118 18.236-7.618-3.809z"/>
+        </g>
+        <text fill="#979797" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="16" font-style="condensed" letter-spacing=".234" opacity=".4">
+            <tspan x="48.965" y="91">Button</tspan>
+        </text>
+    </g>
+</svg>

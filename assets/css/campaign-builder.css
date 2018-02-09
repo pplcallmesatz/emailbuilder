@@ -58,21 +58,95 @@ text.activefill{
 .right-menu {
     position: relative;
     overflow: hidden;
-    height: auto;
+    width: 360px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 12px lightgrey !important;
 }
-.card-action{
+#cards-title .card-chip:last-child{
+    border-bottom: 1px solid #efefef;
+}
+.media-bg {
+    box-shadow: none !important;
+}
+.topnav .topnav-group {
+    display: flex;
+    display: -webkit-flex;
+    text-align: center;
+    background-color: #fff;
+    list-style-type: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0;
+    position: relative;
+}
+.topnav .topnav-group:before {
+content: "";
+    position: absolute;
+    height: 2px;
+    width: 120px;
+    bottom: 0;
+    background-color: #1b72f8;
+    }
+.topnav[data-position= "layout"] .topnav-group:before {
+    left: 0;
+}
+.topnav[data-position="blocks"] .topnav-group:before {
+    left: 120px;
+}
+.topnav[data-position="settings"] .topnav-group:before {
+    left: 240px;
+}
+.topnav .navItem {
+    width: 120px;
+    cursor: pointer;
+        padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*Block Contents*/
+.block-contents{
+        display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.block-contents > div {
+    width: 50%;
+}
+.block-contents .b-fill{
+    fill: #979797;
+}
+.block-contents > div:hover .b-fill,
+.block-contents > div.active .b-fill{
+    fill: #1B72F8;
+}
+.block-contents .bg-fill{
+/*    fill: #F8F8F8;*/
+}
+
+
+
+.card-action,
+.card-settings{
     position: absolute;
     padding: 10px;
     width: 100%;
     height: 100%;
     background-color: #fff;
     left: 100%;
-    top: 0;
+    top: 52px;
     transition: all linear 0.25s;
     -webkit-transition: all linear 0.25s;
     -moz-transition: all linear 0.25s;
     -o-transition: all linear 0.25s;
 }
-.card-action.in{
+.card-action.in,
+.card-settings.in{
     left: 0%;
+}
+.card-settings {
+    background-color: red;
 }
