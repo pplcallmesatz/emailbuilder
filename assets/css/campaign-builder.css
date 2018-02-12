@@ -174,13 +174,15 @@ margin-left: 10px;
 }
 
 .block-action {
-    display: flex;
+   display: flex;
     display: -webkit-flex;
-    width: calc(100% - 20px);
+    width: 100%;
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
 }
 .block-action .btn{
     width: 100%;

@@ -47,7 +47,10 @@
             padding: 15px
         }
     
-       
+        * {
+            font-family: sans-serif;
+            font-weight: auto;
+        }
     </style>
 </head>
 
@@ -271,9 +274,10 @@
     <path fill="#1B72F8" fill-rule="nonzero" d="M8.414 12H22a1 1 0 0 1 0 2H8.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L8.414 12z"/>
 </svg> </div><p>Text</p>
 </div>
+                        <div class="editor">Enter your content  </div>
                         <div class="block-action">
                     <a href="javascript:void(0)"  class="btn button-default block-dissmiss" onClick="backToBlock('text')">Cancel</a>
-                        <a href="javascript:void(0)" class="btn button-primary">Ok</a>
+                        <a href="javascript:void(0)" onClick="saveText('text')" class="btn button-primary">Ok</a>
                     </div>
                     </div>
                 </div>
@@ -393,12 +397,58 @@
     <script src="assets/js/draganddrop.js"></script>
     
     <script src="assets/js/campaign-creat.js"></script>
+<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=euhd5bvqi5b63yl5jo560yvpjed758sg6nvz2xheyihqatzw"></script>
+
 
     <script>
-
         
-          
-       
+//        function tiny(){
+//tinymce.init({
+//  selector: 'div.con',
+//  theme: 'inlite',
+//   plugins: [
+//    "advlist autolink autosave link image lists charmap print preview hr anchor pagebreak",
+//    "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
+//    "table contextmenu directionality emoticons template textcolor paste fullpage textcolor colorpicker textpattern"
+//  ],
+//  selection_toolbar: 'h1 h2 h3 h4 h5 h6 blockquote quicklink| insertfile undo redo forecolor| styleselect | bold italic | alignleft aligncenter alignright alignjustify forecolor| bullist numlist outdent indent',
+//  inline: true,
+//  paste_data_images: true,
+//  content_css: [
+//    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+//    '//www.tinymce.com/css/codepen.min.css']
+//});
+//            }
+        
+      
+             tinymce.init({
+  selector: 'div.editor',
+  inline: true,
+                   menubar: false,
+ plugins: [
+    " autolink link image lists   hr  pagebreak",
+    "contextmenu textcolor paste textcolor colorpicker textpattern"
+  ],
+
+  toolbar1: "bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | styleselect  fontselect fontsizeselect",
+  toolbar2: "bullist numlist | outdent indent blockquote | undo redo | link unlink | forecolor backcolorhr | subscript superscript",
+  content_css: [],
+    init_instance_callback : function(editor) {
+    console.log("Editor: " + editor.id + " is now initialized.");
+  },
+                  setup: function(editor) {
+    editor.on('change', function(e) {
+     
+//        console.log(e)
+        
+        var hm = $(".editor").html();
+        $("[data-text=\"newEdit\"]").html(hm);
+        keyup();
+    });
+  }
+                 
+                 
+});
         
     
     </script>

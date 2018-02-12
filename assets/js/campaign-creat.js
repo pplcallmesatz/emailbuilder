@@ -13,7 +13,7 @@ var clickable = $(".clickable"),
 
     rightMenu = $(".right-menu"),
     topNav = $(".topnav");
-
+var currentClick = "";
 
 
 
@@ -120,19 +120,28 @@ function tabposition(e){
 
 //Show the content menu
 function showContentMenu(e){
+    $(e).parent().addClass("currentAdding");
     tabposition("blocks");
     clickableParent(e);
-    removeLayoutSettingElementSupport();
-    
+    removeLayoutSettingElementSupport(); 
+//    textEdit(e, "samp");
 }
 
-function textEdit(){
+function textEdit(e, samp){
+    
+   $(".testing").append("<div class=\"textContent\" data-text=\"newEdit\">Enter your content</div>");
+      
+        $(".currentAdding .empty-content").remove();
     $(".block-body-text").addClass("in");
+         
+   
 }
 
 
 //Clickable class to parent-div
 function clickableParent(e){
+ 
+
     
     
     
@@ -149,6 +158,18 @@ function clickableParent(e){
 function backToBlock(e){
     if (e === "text"){
         $(".block-body-text").removeClass("in");
+    }
+}
+function saveText(e){
+    if (e === "text"){
+        $(".block-body-text").removeClass("in");
+        $(".testing").removeClass("testing")
+        $(".textContent").removeClass("textContent")
+       tabposition("layouts");
+        $("#cards > .parent-div").each(function(){
+           $(this).removeClass("alreadyClicked").removeClass("currentActive") 
+        });
+        removeLayoutSettingElementSupport();
     }
 }
 
@@ -184,9 +205,16 @@ $(document).ready(function(){
     });
  
 
+//
+//
 
-    
+function keyup(){
 
+$(".editor").keydown(function(){
+    var htmll = $(this).html();
+    $(".textContent").html(htmll);
+});
+  }
 //Make clickable 
 
 
