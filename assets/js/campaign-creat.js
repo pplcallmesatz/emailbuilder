@@ -128,14 +128,30 @@ function showContentMenu(e){
 }
 
 function textEdit(e, samp){
-    
-   $(".testing").append("<div class=\"textContent\" data-text=\"newEdit\">Enter your content</div>");
+    $(".editor").html("Enter your content");
+   $(".currentAdding").append("<div class=\"indiText\"><div class=\"textContent\" data-text=\"newEdit\">Enter your content</div><div class=\"ssss\" onClick=\"editData($(this))\">edit</div></div>");
       
         $(".currentAdding .empty-content").remove();
     $(".block-body-text").addClass("in");
          
    
 }
+
+function editData(e){
+// var ddd= $(e).parent().addClass("currentEditing").find(".textContent").attr("data-text");
+    var dddd = $(e).prev().addClass("textContent");
+    var rr = $(".textContent").attr("data-text");
+    console.log(rr);
+    tabposition("blocks");
+        $(".block-body-text").addClass("in");
+    if(rr === "edited"){
+       var hhttmmll  = $(e).parent().addClass("currentEditing").find(".textContent").html();
+        $(".editor").html(hhttmmll);
+        $(e).parent().addClass("currentEditing")
+    }
+    
+}
+
 
 
 //Clickable class to parent-div
@@ -167,8 +183,10 @@ function saveText(e){
         $(".textContent").removeClass("textContent")
        tabposition("layouts");
         $("#cards > .parent-div").each(function(){
-           $(this).removeClass("alreadyClicked").removeClass("currentActive") 
+           $(this).removeClass("alreadyClicked").removeClass("currentActive");
         });
+        $(".currentAdding").removeClass("currentAdding");
+        $("[data-text=\"newEdit\"]").attr("data-text","edited");
         removeLayoutSettingElementSupport();
     }
 }
@@ -208,16 +226,21 @@ $(document).ready(function(){
 //
 //
 
-function keyup(){
+
 
 $(".editor").keydown(function(){
+    
     var htmll = $(this).html();
     $(".textContent").html(htmll);
 });
-  }
+
 //Make clickable 
 
-
+function change(){
+    console.log("changecalled");
+    var hm = $(".editor").html();
+    $(".textContent").html(hm);
+}
 
 
 
