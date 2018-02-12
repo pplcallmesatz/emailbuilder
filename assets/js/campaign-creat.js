@@ -9,6 +9,7 @@ var clickable = $(".clickable"),
     //Layout empty content
     emptyContent = $(".empty-content"),
     layoutAction = $(".layoutAction"),
+    clickedThis = $(".clickedThis"),
 
     rightMenu = $(".right-menu"),
     topNav = $(".topnav");
@@ -21,9 +22,37 @@ deleteFunction = function(e) {
     $(e).parent().remove();
 }
 
+function dismissBlock(){
+    console.log("dkgf");
+    tabposition("layouts");
+     $("#cards > .parent-div").each(function(){
+         $(this).removeClass("currentActive , alreadyClicked");
+     });
+    removeLayoutSettingElementSupport();
+                                    
+}
+
  function removeLayoutSettingElement(e) {
-     $(e).find('.layoutAction').remove();
-     $(e).removeClass("layout-hover");
+     
+     if ($(e).hasClass("currentActive")) {
+        
+    }
+     else{
+       $(e).find('.layoutAction').remove();
+     $(e).removeClass("layout-hover");  
+     }
+}
+function removeLayoutSettingElementSupport(e){
+    $("#cards > .parent-div").each(function(){
+    
+        if ($(this).hasClass("currentActive")){
+            
+        }
+        else {
+            $(this).find('.layoutAction').remove();
+     $(this).removeClass("layout-hover");
+        }
+             });
 }
 
 function addLayoutSettingElement(e) {
@@ -32,6 +61,8 @@ function addLayoutSettingElement(e) {
             $(e).append(html);
     
     $(e).addClass("layout-hover");
+    
+    
 }
 
 function deleteLayout(e){
@@ -90,25 +121,36 @@ function tabposition(e){
 //Show the content menu
 function showContentMenu(e){
     tabposition("blocks");
-    clickableParent(e)
+    clickableParent(e);
+    removeLayoutSettingElementSupport();
+    
+}
+
+function textEdit(){
+    $(".block-body-text").addClass("in");
 }
 
 
 //Clickable class to parent-div
 function clickableParent(e){
     
-    var d = $(e).parents().eq(4).css("background","red");
     
-    console.log(d);
+    
+    console.log($("#cards > .parent-div").length);
 //   console.log($(e).parent().attr);
-    parentDiv.each(function(){
-        if (e.target === this){
-            console.log("asmple");
-        }
-    })
+    $(".parent-div").each(function(){
+        
+        $(this).removeClass("currentActive").addClass("alreadyClicked");
+    });
+    var d = $(e).parents().eq(4).addClass("currentActive").removeClass("alreadyClicked");
+    
 }
 
-
+function backToBlock(e){
+    if (e === "text"){
+        $(".block-body-text").removeClass("in");
+    }
+}
 
 
 $(document).ready(function(){
@@ -125,15 +167,14 @@ $(document).ready(function(){
     // Structure hover
         $(document).on("mouseenter", ".parent-div", function(e) {
              addLayoutSettingElement(this);
-              
-            
-});
+              });
+
 
   $(document).on("mouseleave", ".parent-div", function(e) {
      removeLayoutSettingElement(this);
-//      console.log(e.target);
-      
   });
+
+
 
 
     //Right side menu
@@ -143,8 +184,11 @@ $(document).ready(function(){
     });
  
 
- 
+
     
+
+//Make clickable 
+
 
 
 

@@ -111,6 +111,7 @@ content: "";
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    align-content: flex-start;
 }
 
 .block-contents > div {
@@ -126,7 +127,78 @@ content: "";
 .block-contents .bg-fill{
 /*    fill: #F8F8F8;*/
 }
+.card-action{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
+.block-body{
+    position: relative;
+    height: 100%;
+    }
+.block-body-text{
+    padding: 15px;
+    position: absolute; 
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+    top: 0;
+        transition: all linear 0.25s;
+    -webkit-transition: all linear 0.25s;
+    -moz-transition: all linear 0.25s;
+    -o-transition: all linear 0.25s;
+}
+.block-body-text.in{
+    left: 0;
+}
+
+.block-body-text .block-text-header{
+    display: flex;
+    align-content: center;
+    align-items: center;
+        height: 40px;
+}
+.text-to-block {
+    cursor: pointer;
+}
+.block-body-text .block-text-header p {
+    
+margin-left: 10px;
+    	opacity: 0.5;
+	
+	font-size: 20px;
+	letter-spacing: 0.3px;
+	color: #000000;
+}
+
+.block-action {
+    display: flex;
+    display: -webkit-flex;
+    width: calc(100% - 20px);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+.block-action .btn{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+.block-action .btn.button-default {
+    background-color: #eeeeee;
+    margin-right: 5px;
+    color: rgba(0,0,0,0.5)
+}
+.block-action .btn.button-primary{
+    background-color: rgba(27, 114, 248,1);
+    color: #fff;
+    
+    margin-left: 5px;
+}
 
 
 .card-action,
@@ -134,7 +206,7 @@ content: "";
     position: absolute;
     padding: 10px;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 52px);
     background-color: #fff;
     left: 100%;
     top: 52px;
@@ -149,4 +221,12 @@ content: "";
 }
 .card-settings {
     background-color: red;
+}
+
+.alreadyClicked {
+    opacity: 0.3;
+}
+.currentActive{
+ opacity: 1;
+    border: 2px solid #1B72F8;
 }
