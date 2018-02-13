@@ -232,3 +232,31 @@ margin-left: 10px;
  opacity: 1;
     border: 2px solid #1B72F8;
 }
+
+.indiText{
+    position: relative;
+}
+.contentAction{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.contentAction > div {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.deleteData,.addData, .editData{
+    background-color: #1b72f8;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+.editor {
+    max-height: 390px;
+}
