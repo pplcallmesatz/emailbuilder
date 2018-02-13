@@ -240,6 +240,7 @@ margin-left: 10px;
     position: absolute;
     bottom: -10px;
     left: 50%;
+    width: 110px;
     text-align: center;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -248,8 +249,12 @@ margin-left: 10px;
 }
 .contentAction > div {
     display: inline-block;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.contentAction > div > img {
+    width: 100%;
+    height: auto;
 }
 .deleteData,.addData, .editData{
     background-color: #1b72f8;
