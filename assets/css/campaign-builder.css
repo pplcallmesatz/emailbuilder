@@ -50,6 +50,10 @@ text.activefill{
 .empty-content {
     color: #1b72f8;
     font-size: 12px;
+    opacity: 0.8;
+}
+.currentAdding .empty-content{
+    opacity: 1;
 }
 
 
@@ -264,4 +268,9 @@ margin-left: 10px;
 }
 .editor {
     max-height: 390px;
+}
+
+ .textContent {
+/*    background-color: rgba(0,0,0,0.05);*/
+     border: 2px dotted red;
 }
