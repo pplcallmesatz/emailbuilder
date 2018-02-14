@@ -16,12 +16,10 @@ var clickable = $(".clickable"),
 var currentClick = "";
 
 
-
-
-deleteFunction = function(e) {
-    $(e).parent().remove();
-}
-
+//Page reload
+window.onbeforeunload = function() {
+        return "Dude, are you sure you want to leave? Think of the kittens!";
+    }
       
              tinymce.init({
   selector: 'div.editor',
