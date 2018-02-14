@@ -83,6 +83,11 @@ function addContentSettings(e, data){
     html = $.parseHTML( str );
      $(e).append(html);
      }
+  if ((dataEditor != "true")&&(data === "button")){
+         var str = "<div class=\"contentAction\"><div class=\"addData\" onClick=\"addData($(this))\"><img src=\"assets/img/plus.svg\" alt=\"add\"> </div><div class=\"editData\" onClick=\"buttonEditData($(this))\"><img src=\"assets/img/edit.svg\" alt=\"edit\"></div><div class=\"deleteData\" onClick=\"deleteData($(this))\"><img src=\"assets/img/trash.svg\" alt=\"delete\"></div></div>";
+    html = $.parseHTML( str );
+     $(e).append(html);
+     }
     else{
         
     }
@@ -250,6 +255,15 @@ $(document).on("mouseenter", ".indiImage", function(e) {
 
   $(document).on("mouseleave", ".indiImage", function(e) {
      removeContentSettings(this, "image");
+  });
+
+$(document).on("mouseenter", ".indiButton", function(e) {
+             addContentSettings(this, "button");
+              });
+
+
+  $(document).on("mouseleave", ".indiButton", function(e) {
+     removeContentSettings(this, "button");
   });
 
 

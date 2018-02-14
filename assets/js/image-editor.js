@@ -8,7 +8,6 @@ function imageEdit(e, samp){
     }
     else {
         dataEditor("true");
-           $(".editor").html("Enter your content");
    $(".currentAdding").append("<div class=\"indiImage\"><img src=\"https://getuikit.com/v2/docs/images/placeholder_600x400.svg\" class=\"image-content\"  width=\"100%\" id=\"imageData\" alt=\"image\"></div>");
       
         $(".currentAdding .empty-content").remove();

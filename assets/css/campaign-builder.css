@@ -153,10 +153,10 @@ top: 0;
 -moz-transition: all linear 0.25s;
 -o-transition: all linear 0.25s;
 }
-.block-body-text, .block-body-image{
+.block-body-text, .block-body-image, .block-body-button{
     left: 100%;
 }
-.block-body-text.in, .block-body-image.in{
+.block-body-text.in, .block-body-image.in, .block-body-button.in{
     left: 0;
 }
 
@@ -239,7 +239,7 @@ margin-left: 10px;
     border: 2px solid #1B72F8;
 }
 
-.indiText, .indiImage{
+.indiText, .indiImage, .indiButton{
     position: relative;
 }
 .contentAction{
