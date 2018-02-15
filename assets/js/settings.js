@@ -141,6 +141,10 @@ function tabposition(e){
                  else {
                      $("[data-target=\"blocks\"]").removeClass("in");
                      $("[data-target=\"settings\"]").removeClass("in");
+                     $(".block-body-text").removeClass("in");
+                     $(".block-body-image").removeClass("in");
+                     $(".block-body-button").removeClass("in");
+                     $(".block-body-html").removeClass("in");
                  }
         }
 
@@ -163,6 +167,11 @@ function backToBlock(e){
     else if(e === "image"){
         $(".block-body-image").removeClass("in");
         $(".imageContent").removeClass("imageContent");
+        dataEditor("false");
+    }
+    else if(e === "button"){
+        $(".block-body-button").removeClass("in");
+        $(".buttonNowEditing").removeClass("buttonNowEditing");
         dataEditor("false");
     }
    
@@ -279,8 +288,26 @@ $(document).on("mouseenter", ".indiButton", function(e) {
 //
 //
 
+function resetEditable(e, data){
+var dddd = $(".addedEditables");
+    if (data === "button"){
+                dddd.removeClass("indiText");
+                dddd.removeClass("indiImage");
+                      }
+     else if (data === "image"){
+       
+               dddd.removeClass("indiText");
+               dddd.removeClass("indiButton");
+              
+        }
+    else if (data === "text"){
+               dddd.removeClass("indiButton");
+               dddd.removeClass("indiImage");
+               }
+    
+}
 
-
+    
 
 
 

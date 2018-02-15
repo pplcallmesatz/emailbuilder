@@ -277,3 +277,76 @@ margin-left: 10px;
 /*    background-color: rgba(0,0,0,0.05);*/
      border: 2px dotted red;
 }
+.imageContent, .buttonContent{
+        overflow: scroll;
+    height: calc(100% - 90px);
+}
+.content-heading{
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+.button-group .button-forms{
+    display: inline-block;
+    width: calc(50% - 4px);
+}
+.button-forms{
+    margin-top: 15px;
+}
+.button-forms label {
+    display: block;
+    color: #979797;
+}
+.button-forms input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #000000; 
+    border-radius: 4px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+
+.button-placement {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.button-placement > div {
+    flex-grow: 1;
+}
+.buttonPlacement.active rect, .imgPlacement.active rect{
+    stroke: #1b72f8;
+}
+.buttonPlacement.active path, .imgPlacement.active path  {
+    fill: #1b72f8;
+}
+
+
+
+/*Color Picker*/
+.button-forms {
+    position: relative;
+}
+.button-forms .sp-replacer{
+    position: absolute;
+    right: 5px;
+    top: 22px;
+    border-radius: 30px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.button-forms .sp-preview{
+    border-radius: 30px;
+    margin-right: 0px;
+    background-color: transparent;
+    border-color: #000;
+    overflow: hidden;
+    width: 28px;
+    height: 28px;
+}
+
+.sp-dd {
+    display: none
+}

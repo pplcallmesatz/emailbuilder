@@ -1,15 +1,16 @@
 // Image
 function imageEdit(e, samp){
     var dataContent = $("#cards").attr("data-content");
-    
+    resetEditable(e, "image");
     
     if (dataContent === "none"){
         console.log(true);  
     }
     else {
         dataEditor("true");
-   $(".currentAdding").append("<div class=\"indiImage\"><img src=\"https://getuikit.com/v2/docs/images/placeholder_600x400.svg\" class=\"image-content\"  width=\"100%\" id=\"imageData\" alt=\"image\"></div>");
-      
+           $(".addedEditables").attr("style","");
+        $(".addedEditables").attr("onClick","");
+        $(".addedEditables").addClass("indiImage").removeClass("empty-content").html("<img src=\"https://getuikit.com/v2/docs/images/placeholder_600x400.svg\" class=\"image-content\"  style=\"max-width:100%\" id=\"imageData\" alt=\"image\">")
         $(".currentAdding .empty-content").remove();
     $(".block-body-image").addClass("in");
         
@@ -50,3 +51,38 @@ document.getElementById("inp").addEventListener("change", readFile);
 
 
 
+function imgPlacement(placement , e){
+    if(placement === "left"){
+       
+        imgPlacementActiveToggler(e);
+        $(".addedEditables").css("text-align", "left").find("img").css("display","inline-block");
+         $(e).addClass("active"); 
+    }
+    else if(placement === "right"){
+        imgPlacementActiveToggler(e);
+
+        $(".addedEditables").css("text-align", "right").find("img").css("display","inline-block");
+        $(e).addClass("active"); 
+    }
+     else if(placement === "center"){
+         imgPlacementActiveToggler(e);
+        $(".addedEditables").css("text-align", "center").find("img").css("display","inline-block");
+         $(e).addClass("active"); 
+    }
+     else if(placement === "block"){
+         imgPlacementActiveToggler(e);
+        $(".addedEditables").css("text-align", "center").find("img").css({
+            "display": "block",
+            "width": "100%"
+        });
+         $(e).addClass("active"); 
+    }
+}
+
+
+function imgPlacementActiveToggler(){
+     $(".imgPlacement").each(function(){
+          $(this).removeClass("active");
+        })
+     
+}

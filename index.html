@@ -24,6 +24,7 @@
 
     <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/campaign-builder.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/spectrum.css" rel="stylesheet" type="text/css" />
 <!--    <link href="assets/css/dropzone.css" rel="stylesheet" type="text/css" />-->
 
     <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
@@ -276,6 +277,7 @@
     <path fill="#1B72F8" fill-rule="nonzero" d="M8.414 12H22a1 1 0 0 1 0 2H8.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L8.414 12z"/>
 </svg> </div><p>Text</p>
 </div>
+                        <h2>Your Text</h2>
                         <div class="editor">Enter your content  </div>
                         <div class="block-action">
 <!--                    <a href="javascript:void(0)"  class="btn button-default block-dissmiss" onClick="backToBlock('text')">Cancel</a>-->
@@ -289,14 +291,99 @@
     <path fill="#1B72F8" fill-rule="nonzero" d="M8.414 12H22a1 1 0 0 1 0 2H8.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L8.414 12z"/>
 </svg> </div><p>Images</p>
 </div>
-                        <div class="imageContent">
-                            <h2>Select image</h2>
-                        <input id="inp" type='file' class="">
+                            
+                             <div class="imageContent">
+                                   <h2>Select image</h2>
+                                <input id="inp" type='file' class="">
+                            
+                             <h4 class="content-heading">Button Placement</h4>
+                               <div class="button-placement">
+        <div onClick="imgPlacement('left', $(this))" class="imgPlacement">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                <defs>
+                    <rect id="a" width="62.67" height="36" rx="4" />
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                    <use fill="#FFF" xlink:href="#a" />
+                    <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                    <rect width="2" height="20" x="5" y="8" fill="#D8D8D8" rx="1" />
+                    <path fill="#D8D8D8" fill-rule="nonzero" d="M10.414 17H24a1 1 0 0 1 0 2H10.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L10.414 17z" />
+                </g>
+            </svg>
+        </div>
+
+
+        <div onClick="imgPlacement('right', $(this))" class="imgPlacement">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                <defs>
+                    <rect id="a" width="62.67" height="36" rx="4" />
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                    <g>
+                        <use fill="#FFF" xlink:href="#a" />
+                        <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                    </g>
+                    <path fill="#D8D8D8" d="M51.586 17H38a1 1 0 0 0 0 2h13.586l-4.293 4.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L51.586 17zM56 8a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1z" />
+                </g>
+            </svg>
+
+
+        </div>
+
+
+
+
+
+
+        <div onClick="imgPlacement('center', $(this))" class="imgPlacement">
+
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                <defs>
+                    <rect id="a" width="62.67" height="36" rx="4" />
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                    <g>
+                        <use fill="#FFF" xlink:href="#a" />
+                        <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                    </g>
+                    <path fill="#D8D8D8" fill-rule="nonzero" d="M35.414 17H49a1 1 0 0 1 0 2H35.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L35.414 17zm-8.828 2H13a1 1 0 0 1 0-2h13.586l-4.293-4.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L26.586 19zM31 8a1 1 0 0 1 1 1v18a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z" />
+                </g>
+            </svg>
+
+        </div>
+
+
+
+
+
+        <div onClick="imgPlacement('block', $(this))" class="imgPlacement">
+
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                <defs>
+                    <rect id="a" width="62.67" height="36" rx="4" />
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                    <g>
+                        <use fill="#FFF" xlink:href="#a" />
+                        <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                    </g>
+                    <path fill="#D8D8D8" d="M51.586 17H38a1 1 0 0 0 0 2h13.586l-4.293 4.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L51.586 17zM56 8a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1zM10.414 17H24a1 1 0 0 1 0 2H10.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L10.414 17zM6 8a1 1 0 0 1 1 1v18a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z" />
+                </g>
+            </svg>
+
+
+        </div>
+
+
+
+
+    </div>
+                        </div>
 <!--
 <p id="b64"></p>
 <img id="img" height="150">
 -->
-                        </div>
+                     
                         <div class="block-action">
 <!--                    <a href="javascript:void(0)"  class="btn button-default block-dissmiss" onClick="backToBlock('text')">Cancel</a>-->
                         <a href="javascript:void(0)" onClick="saveText('image')" class="btn button-primary">Ok</a>
@@ -307,10 +394,122 @@
                         <div class="text-to-block" onclick="backToBlock('button')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
     <path fill="#1B72F8" fill-rule="nonzero" d="M8.414 12H22a1 1 0 0 1 0 2H8.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L8.414 12z"/>
-</svg> </div><p>Images</p>
+</svg> </div><p>Button</p>
 </div>
-                        <div class="imageContent">
-                            <h2>Select image</h2>
+                        <div class="buttonContent">
+                            <h2>Customise Button </h2>
+                            <div class="button-forms">
+                                <label>Button Text</label>
+                            <input type="text" class="btn-text" placeholder="Button Text" />
+                            </div>
+                            <div class="button-forms">
+                                <label>Button Link</label>
+                            <input type="text" class="btn-link" placeholder="http://www.yoursite.com" />
+                            </div>
+                            <div class="button-forms">
+                                <label>Button Color</label>
+                            <input type="text" class="btn-color" placeholder="Button Text" />
+                            <input type="text" class="" id="btnBgColor"/>
+                            </div>
+                            <div class="button-forms">
+                                <label>Text Color</label>
+                            <input type="text" class="btn-text-color" placeholder="Button Text" />
+                               <input type='text' id="textColor" />
+
+                            </div>
+                            <h4 class="content-heading">Padding</h4>
+                            <div class="button-group">
+                            <div class="button-forms">
+                                <label>Top and Bottom</label>
+                            <input type="number" class="pad-tb" placeholder="10px" value="10" />
+                            </div>
+                            <div class="button-forms">
+                                <label>Left and right</label>
+                            <input type="number" class="pad-rl" placeholder="10px" value="10" />
+                            </div>
+                            </div>
+                             <h4 class="content-heading">Button Placement</h4>
+                               <div class="button-placement">
+        <div onClick="btnPlacement('left', $(this))" class="buttonPlacement">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                <defs>
+                    <rect id="a" width="62.67" height="36" rx="4" />
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                    <use fill="#FFF" xlink:href="#a" />
+                    <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                    <rect width="2" height="20" x="5" y="8" fill="#D8D8D8" rx="1" />
+                    <path fill="#D8D8D8" fill-rule="nonzero" d="M10.414 17H24a1 1 0 0 1 0 2H10.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L10.414 17z" />
+                </g>
+            </svg>
+        </div>
+
+
+        <div onClick="btnPlacement('right', $(this))" class="buttonPlacement">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                <defs>
+                    <rect id="a" width="62.67" height="36" rx="4" />
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                    <g>
+                        <use fill="#FFF" xlink:href="#a" />
+                        <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                    </g>
+                    <path fill="#D8D8D8" d="M51.586 17H38a1 1 0 0 0 0 2h13.586l-4.293 4.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L51.586 17zM56 8a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1z" />
+                </g>
+            </svg>
+
+
+        </div>
+
+
+
+
+
+
+        <div onClick="btnPlacement('center', $(this))" class="buttonPlacement">
+
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                <defs>
+                    <rect id="a" width="62.67" height="36" rx="4" />
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                    <g>
+                        <use fill="#FFF" xlink:href="#a" />
+                        <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                    </g>
+                    <path fill="#D8D8D8" fill-rule="nonzero" d="M35.414 17H49a1 1 0 0 1 0 2H35.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L35.414 17zm-8.828 2H13a1 1 0 0 1 0-2h13.586l-4.293-4.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L26.586 19zM31 8a1 1 0 0 1 1 1v18a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z" />
+                </g>
+            </svg>
+
+        </div>
+
+
+
+
+
+        <div onClick="btnPlacement('block', $(this))" class="buttonPlacement">
+
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                <defs>
+                    <rect id="a" width="62.67" height="36" rx="4" />
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                    <g>
+                        <use fill="#FFF" xlink:href="#a" />
+                        <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                    </g>
+                    <path fill="#D8D8D8" d="M51.586 17H38a1 1 0 0 0 0 2h13.586l-4.293 4.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L51.586 17zM56 8a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1zM10.414 17H24a1 1 0 0 1 0 2H10.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L10.414 17zM6 8a1 1 0 0 1 1 1v18a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z" />
+                </g>
+            </svg>
+
+
+        </div>
+
+
+
+
+    </div>
                         </div>
                         <div class="block-action">
 <!--                    <a href="javascript:void(0)"  class="btn button-default block-dissmiss" onClick="backToBlock('text')">Cancel</a>-->
@@ -439,10 +638,22 @@
     <script src="assets/js/image-editor.js"></script>
     <script src="assets/js/settings.js"></script>
     <script src="assets/js/button-editor.js"></script>
+    <script src="assets/js/spectrum.js"></script>
 <!--    <script src="assets/js/dropzone.js"></script>-->
 
 
-
+<script>
+$("#textColor").spectrum({
+    color: "#f00",
+     preferredFormat: "rgb",
+    showInput: true
+});
+    $("#btnBgColor").spectrum({
+    color: "#f00",
+        preferredFormat: "rgb",
+    showInput: true
+});
+</script>
     <script>
         
   
