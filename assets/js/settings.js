@@ -206,6 +206,7 @@ function dismissBlock(){
     tabposition("layouts"); 
     dataContent("none");
     dataEditor("false");
+    $(".addedEditables").removeClass("addedEditables");
      $("#cards > .parent-div").each(function(){
          $(this).removeClass("currentActive , alreadyClicked");
      });

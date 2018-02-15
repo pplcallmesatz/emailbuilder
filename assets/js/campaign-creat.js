@@ -278,7 +278,6 @@ function deleteData(e){
     $(e).parent().parent().remove();
     
     var deleteData = $(".deleteDataContent").html();
-    console.log(deleteData);
     if(deleteData === ""){
         console.log("true");
                $(".deleteDataContent").append(html)
