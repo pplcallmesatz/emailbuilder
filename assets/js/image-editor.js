@@ -50,23 +50,31 @@ document.getElementById("inp").addEventListener("change", readFile);
 
 
 
-
 function imgPlacement(placement , e){
     if(placement === "left"){
        
         imgPlacementActiveToggler(e);
-        $(".addedEditables").css("text-align", "left").find("img").css("display","inline-block");
+        $(".addedEditables").css("text-align", "left").find("img").css({
+            "display": "inline-block",
+            "width": "auto",
+        });
          $(e).addClass("active"); 
     }
     else if(placement === "right"){
         imgPlacementActiveToggler(e);
 
-        $(".addedEditables").css("text-align", "right").find("img").css("display","inline-block");
+        $(".addedEditables").css("text-align", "right").find("img").css({
+            "display": "inline-block",
+            "width": "auto"
+        });
         $(e).addClass("active"); 
     }
      else if(placement === "center"){
          imgPlacementActiveToggler(e);
-        $(".addedEditables").css("text-align", "center").find("img").css("display","inline-block");
+        $(".addedEditables").css("text-align", "center").find("img").css({
+            "display": "inline-block",
+            "width": "auto"
+        });
          $(e).addClass("active"); 
     }
      else if(placement === "block"){
@@ -86,3 +94,26 @@ function imgPlacementActiveToggler(){
         })
      
 }
+
+$(".img-url").on("keyup , change", function(){
+var urlValue = $(this).val();
+    $(".imageUrl").attr("href", urlValue);
+    
+    if ($(".addedEditables").find("a").hasClass("imageUrl")){
+        
+    }
+    else{
+    moveToLink();
+        }
+});
+
+
+function moveToLink(){
+var imgUrlVal = $(".img-url").val();
+if (imgUrlVal != ""){
+    $(".addedEditables").append("<a href=\"\" class=\"imageUrl\" target=\"_blank\"></a>");
+      var imageData = $('#imageData').detach();
+    $(imageData).appendTo(".imageUrl")
+   
+}
+    }

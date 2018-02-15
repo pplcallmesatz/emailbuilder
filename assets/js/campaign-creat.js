@@ -231,6 +231,7 @@ function saveText(e){
         $(".currentAdding").removeClass("currentAdding");
         $(".currentEditing").removeClass("currentEditing");
         $(".addedEditables").removeClass("addedEditables");
+        $(".imageUrl").removeClass("imageUrl");
         
 //        $("[data-text=\"newEdit\"]").attr("data-text","edited");
         removeLayoutSettingElementSupport();

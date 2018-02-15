@@ -45,7 +45,7 @@ function buttonEditData(e){
        
         var paddingTopStringify  = $(e).parent().parent().addClass("currentEditing").find(".buttonNowEditing").css("padding-top");
 
-        var url  = $(e).parent().parent().addClass("currentEditing").find(".buttonNowEditing").attr("src");
+        var url  = $(e).parent().parent().addClass("currentEditing").find(".buttonNowEditing").attr("href");
         
         var btnBackground  = $(e).parent().parent().addClass("currentEditing").find(".buttonNowEditing").css("background-color");
         
@@ -111,7 +111,7 @@ $(".btn-text").on("keyup , change", function(){
 $(".btn-link").on("keyup , change", function(){
     var urlVal = $(this).val();
 //    console.log(urlVal);
-    $(".buttonNowEditing").attr("src", urlVal);
+    $(".buttonNowEditing").attr("href", urlVal);
 });
 $(".pad-tb").on("keyup , change", function(){
     var paddingVal = $(this).val();
