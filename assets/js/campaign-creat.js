@@ -14,6 +14,7 @@ var clickable = $(".clickable"),
     rightMenu = $(".right-menu"),
     topNav = $(".topnav");
 var currentClick = "";
+var CopiedData = "";
 
 
 //Page reload
@@ -162,7 +163,7 @@ function editData(e){
 // var ddd= $(e).parent().addClass("currentEditing").find(".textContent").attr("data-text");
     var dddd = $(e).parent().prev().addClass("textContent");
     var ddddd = $(e).parent().prev().attr("class");
-    console.log(ddddd);
+    CopiedData = $(".textContent").html();
     var rr = $(".textContent").attr("data-text");
     console.log(rr);
     tabposition("blocks");

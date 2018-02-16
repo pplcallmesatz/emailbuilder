@@ -161,6 +161,7 @@ function tabposition(e){
 function backToBlock(e){
     if (e === "text"){
         $(".block-body-text").removeClass("in");
+        $(".textContent").html(CopiedData);
         $(".textContent").removeClass("textContent");
         dataEditor("false");
     }
