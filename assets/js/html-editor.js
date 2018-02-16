@@ -8,7 +8,7 @@ function htmlEdit(e, samp){
     }
     else {
         dataEditor("true");
- 
+ $(".htmlData").val("Your code goes here");
 //            var fileName = input.html();
         $(".addedEditables").attr("style","");
         $(".addedEditables").attr("onClick","");

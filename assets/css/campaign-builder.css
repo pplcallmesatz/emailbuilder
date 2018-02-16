@@ -350,3 +350,13 @@ margin-left: 10px;
 .sp-dd {
     display: none
 }
+.htmlData{
+    width: 100%;
+    height: 275px;
+    resize: vertical;
+}
+.helpText{
+    font-size: 14px;
+    margin-top: 15px;
+    color: rgba(226, 0, 0, 0.71);
+}

@@ -182,7 +182,16 @@ function backToBlock(e){
     }
     else if(e === "html"){
         $(".block-body-html").removeClass("in");
+        var dv = $(".htmlNowEditing").attr("data-html");
+        if (dv === "newEdit"){
+            var hd = $(".htmlData").val();
+            if (hd === ""){
+                 $(".htmlNowEditing").html("Your code goes here");
+            }
+        }
+        else {
         $(".htmlNowEditing").html(CopiedHtmlData);
+        }
         $(".htmlNowEditing").removeClass("htmlNowEditing");
         dataEditor("false");
     }
