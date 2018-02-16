@@ -349,7 +349,49 @@ var dddd = $(".addedEditables");
 
     
 
+ $("#textColor").spectrum({
+                color: "#f00",
+                preferredFormat: "rgb",
+                showInput: true
+            });
+            $("#btnBgColor").spectrum({
+                color: "#f00",
+                preferredFormat: "rgb",
+                showInput: true
+            });
+            $("#pageBgColor").spectrum({
+                color: "#f00",
+                preferredFormat: "rgb",
+                showInput: true
+            });
+            $("#cntBg").spectrum({
+                color: "#f00",
+                preferredFormat: "rgb",
+                showInput: true
+            });
+            
+            $("#pageBgColor").on("change", function(){
+                var bgCol = $("#pageBgColor").val();
+                $(".pageBgColor").val(bgCol);
+                $("#cards").css("background-color", bgCol);
+            })   
 
+            $(".pagePaddingg").on("change", function(){
+                var pgPad = $(".pagePaddingg").val();
+                console.log(pgPad)
+                $("#cards").css("padding",  pgPad + "px");
+            })
+            $("#cntBg").on("change", function(){
+            contentBg();
+            });
+
+function contentBg(){
+        var cntBg = $("#cntBg").val();
+                $(".cntBg").val(cntBg);
+                $("table").each(function(){
+                   $(this).css("background-color", cntBg); 
+                });
+}
 
 
 

@@ -13,11 +13,11 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
     <!-- Latest compiled and minified CSS -->
-<!--
+    <!--
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     
 -->
-<!--    Font Awesome icons-->
+    <!--    Font Awesome icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
@@ -25,31 +25,35 @@
     <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/campaign-builder.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/spectrum.css" rel="stylesheet" type="text/css" />
-<!--    <link href="assets/css/dropzone.css" rel="stylesheet" type="text/css" />-->
+    <!--    <link href="assets/css/dropzone.css" rel="stylesheet" type="text/css" />-->
 
     <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
 
-    
+
     <style>
-        .flex-box{
+        .flex-box {
             display: flex;
         }
+        
         .right-menu {
             width: 350px;
             flex-shrink: 0;
         }
+        
         .flex-grow-1 {
             flex-grow: 1;
         }
+        
         table {
             background-color: #fff;
-/*            text-align: center;*/
+            /*            text-align: center;*/
         }
+        
         table tr td {
-/*            padding: 10px 15px;*/
-/*            vertical-align: top;*/
+            /*            padding: 10px 15px;*/
+            /*            vertical-align: top;*/
         }
-    
+        
         * {
             font-family: sans-serif;
             font-weight: auto;
@@ -67,621 +71,632 @@
         <!-- Cards Box -->
         <div id="cards-box" class="flex-box">
             <!-- Card Box -->
-            <div class="flex-grow-1"  style="" id="cards" data-content="none" data-editor="false">
-<!--                <div class="drag-here">Drag and D rop Content Cards to Create your Page</div>-->
+            <div class="flex-grow-1" style="" id="cards" data-content="none" data-editor="false">
+                <!--                <div class="drag-here">Drag and D rop Content Cards to Create your Page</div>-->
 
             </div>
             <!-- Cards Title -->
             <div class="right-menu">
                 <div class="topnav">
                     <ul class="topnav-group">
-                <li class="navItem" data-tab="layouts">Layouts</li>
-                <li class="navItem" data-tab="blocks">Blocks</li>
-                <li class="navItem" data-tab="settings">Settings</li>
-                        </ul>
+                        <li class="navItem" data-tab="layouts">Layouts</li>
+                        <li class="navItem" data-tab="blocks">Blocks</li>
+                        <li class="navItem" data-tab="settings">Settings</li>
+                    </ul>
                 </div>
                 <div id="cards-title" data-target="layouts" data-right="tab" class="media-bg layouts" src="assets/img/move.svg">
-                    
-                    
+
+
                     <div data-card="#gridOne" class="card-chip">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="318" height="58" viewBox="0 0 318 58">
-        <defs>
-            <path id="b" d="M0 0h303v40H0z" />
-            
-        </defs>
-        <g fill="none" fill-rule="evenodd">
-            <g transform="translate(9 8)">
-                <use fill="#000" filter="url(#a)" xlink:href="#b" />
-                <use class="activefill" xlink:href="#b" />
-            </g>
-            <path fill="#FFF" d="M19 18h283v20H19z" />
-            <text fill="#3FBB76" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" transform="translate(9 8)" class="activefill">
-                <tspan x="138" y="24">100%</tspan>
-            </text>
-        </g>
-    </svg>
-</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="318" height="58" viewBox="0 0 318 58">
+                            <defs>
+                                <path id="b" d="M0 0h303v40H0z" />
+
+                            </defs>
+                            <g fill="none" fill-rule="evenodd">
+                                <g transform="translate(9 8)">
+                                    <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                                    <use class="activefill" xlink:href="#b" />
+                                </g>
+                                <path fill="#FFF" d="M19 18h283v20H19z" />
+                                <text fill="#3FBB76" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" transform="translate(9 8)" class="activefill">
+                                    <tspan x="138" y="24">100%</tspan>
+                                </text>
+                            </g>
+                        </svg>
+                    </div>
                     <div data-card="#gridTwo" class="card-chip">
 
-    <svg xmlns="http://www.w3.org/2000/svg" width="303" height="40" viewBox="0 0 303 40">
-        <g fill="none" fill-rule="evenodd">
-            <path class="activefill" d="M0 0h303v40H0z" />
-            <path fill="#FFF" d="M10 10h136.5v20H10z" />
-            <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" >
-                <tspan x="67" y="24">50%</tspan>
-            </text>
-            <path fill="#FFF" d="M157 10h136.5v20H157z" />
-            <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" >
-                <tspan x="213" y="24">50%</tspan>
-            </text>
-        </g>
-    </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="303" height="40" viewBox="0 0 303 40">
+                            <g fill="none" fill-rule="evenodd">
+                                <path class="activefill" d="M0 0h303v40H0z" />
+                                <path fill="#FFF" d="M10 10h136.5v20H10z" />
+                                <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+                                    <tspan x="67" y="24">50%</tspan>
+                                </text>
+                                <path fill="#FFF" d="M157 10h136.5v20H157z" />
+                                <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+                                    <tspan x="213" y="24">50%</tspan>
+                                </text>
+                            </g>
+                        </svg>
 
 
-</div> 
+                    </div>
                     <div data-card="#gridThree-3367" class="card-chip">
                         <svg xmlns="http://www.w3.org/2000/svg" width="303" height="40" viewBox="0 0 303 40">
-    <g fill="none" fill-rule="evenodd">
-        <path class="activefill" d="M0 0h303v40H0z"/>
-        <path fill="#FFF" d="M10 10h97v20H10z"/>
-        <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
-            <tspan x="47" y="24">33%</tspan>
-        </text>
-        <path fill="#FFF" d="M117 10h176v20H117z"/>
-        <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
-            <tspan x="194" y="24">66%</tspan>
-        </text>
-    </g>
-</svg>
+                            <g fill="none" fill-rule="evenodd">
+                                <path class="activefill" d="M0 0h303v40H0z" />
+                                <path fill="#FFF" d="M10 10h97v20H10z" />
+                                <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
+                                    <tspan x="47" y="24">33%</tspan>
+                                </text>
+                                <path fill="#FFF" d="M117 10h176v20H117z" />
+                                <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+                                    <tspan x="194" y="24">66%</tspan>
+                                </text>
+                            </g>
+                        </svg>
                     </div>
                     <div data-card="#gridFour-6733" class="card-chip">
-                        
-                        <svg xmlns="http://www.w3.org/2000/svg" width="303" height="40" viewBox="0 0 303 40">
-    <g fill="none" fill-rule="evenodd">
-        <path class="activefill" d="M0 0h303v40H0z"/>
-        <path fill="#FFF" d="M196 10h97v20h-97z"/>
-        <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
-            <tspan x="233" y="24">33%</tspan>
-        </text>
-        <path fill="#FFF" d="M10 10h176v20H10z"/>
-        <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
-            <tspan x="87" y="24">66%</tspan>
-        </text>
-    </g>
-</svg>
 
-                        
-                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="303" height="40" viewBox="0 0 303 40">
+                            <g fill="none" fill-rule="evenodd">
+                                <path class="activefill" d="M0 0h303v40H0z" />
+                                <path fill="#FFF" d="M196 10h97v20h-97z" />
+                                <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+                                    <tspan x="233" y="24">33%</tspan>
+                                </text>
+                                <path fill="#FFF" d="M10 10h176v20H10z" />
+                                <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
+                                    <tspan x="87" y="24">66%</tspan>
+                                </text>
+                            </g>
+                        </svg>
+
+
+
                     </div>
                     <div data-card="#gridFive-33" class="card-chip">
-                        
+
                         <svg xmlns="http://www.w3.org/2000/svg" width="303" height="40" viewBox="0 0 303 40">
-    <g fill="none" fill-rule="evenodd">
-        <path class="activefill" d="M0 0h303v40H0z"/>
-        <path fill="#FFF" d="M10 10h87.67v20H10z"/>
-        <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
-            <tspan x="43" y="24">33%</tspan>
-        </text>
-        <path fill="#FFF" d="M108 10h87.67v20H108z"/>
-        <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
-            <tspan x="141" y="24">33%</tspan>
-        </text>
-        <path fill="#FFF" d="M205 10h87.67v20H205z"/>
-        <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
-            <tspan x="238" y="24">33%</tspan>
-        </text>
-    </g>
-</svg>
+                            <g fill="none" fill-rule="evenodd">
+                                <path class="activefill" d="M0 0h303v40H0z" />
+                                <path fill="#FFF" d="M10 10h87.67v20H10z" />
+                                <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
+                                    <tspan x="43" y="24">33%</tspan>
+                                </text>
+                                <path fill="#FFF" d="M108 10h87.67v20H108z" />
+                                <text fill="#000" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176" opacity=".3">
+                                    <tspan x="141" y="24">33%</tspan>
+                                </text>
+                                <path fill="#FFF" d="M205 10h87.67v20H205z" />
+                                <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+                                    <tspan x="238" y="24">33%</tspan>
+                                </text>
+                            </g>
+                        </svg>
 
                     </div>
-                <div data-card="#gridFive-25" class="card-chip">
+                    <div data-card="#gridFive-25" class="card-chip">
                         <svg xmlns="http://www.w3.org/2000/svg" width="303" height="40" viewBox="0 0 303 40">
-    <g fill="none" fill-rule="evenodd">
-        <path class="activefill" d="M0 0h303v40H0z"/>
-        <path fill="#FFF" d="M10 10h63.25v20H10z"/>
-        <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
-            <tspan x="31" y="24">25%</tspan>
-        </text>
-        <path fill="#FFF" d="M83 10h63.25v20H83z"/>
-        <text class="activefill"  font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
-            <tspan x="103" y="24">25%</tspan>
-        </text>
-        <path fill="#FFF" d="M157 10h63.25v20H157z"/>
-        <text class="activefill"  font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
-            <tspan x="177" y="24">25%</tspan>
-        </text>
-        <path fill="#FFF" d="M230 10h63.25v20H230z"/>
-        <text class="activefill"  font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
-            <tspan x="250" y="24">25%</tspan>
-        </text>
-    </g>
-</svg>
+                            <g fill="none" fill-rule="evenodd">
+                                <path class="activefill" d="M0 0h303v40H0z" />
+                                <path fill="#FFF" d="M10 10h63.25v20H10z" />
+                                <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+                                    <tspan x="31" y="24">25%</tspan>
+                                </text>
+                                <path fill="#FFF" d="M83 10h63.25v20H83z" />
+                                <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+                                    <tspan x="103" y="24">25%</tspan>
+                                </text>
+                                <path fill="#FFF" d="M157 10h63.25v20H157z" />
+                                <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+                                    <tspan x="177" y="24">25%</tspan>
+                                </text>
+                                <path fill="#FFF" d="M230 10h63.25v20H230z" />
+                                <text class="activefill" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="12" font-style="condensed" letter-spacing=".176">
+                                    <tspan x="250" y="24">25%</tspan>
+                                </text>
+                            </g>
+                        </svg>
 
                     </div>
                 </div>
                 <div class="card-action" data-target="blocks" data-right="tab">
                     <div class="block-body">
-                <div class="block-contents">
-                    <div class="block-text" onClick="textEdit()">
-                        
-                        
-                        <svg xmlns="http://www.w3.org/2000/svg" width="147" height="100" viewBox="0 0 147 100">
-    <g  class="b-fill" fill-rule="evenodd">
-        <path d="M0 0h146.5v100H0z" opacity=".1"/>
-        <path d="M56 25h38a1 1 0 0 1 0 2H56a1 1 0 1 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 1 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 1 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h25a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2z" opacity="1"/>
-        <text font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="16" font-style="condensed" letter-spacing=".234">
-            <tspan x="58.48" y="91">Text</tspan>
-        </text>
-    </g>
-</svg>
-</div>
-                    <div class="block-image" onClick="imageEdit()">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="147" height="100" viewBox="0 0 147 100">
-    <g class="b-fill"  fill-rule="evenodd">
-        <path d="M0 0h146.5v100H0z" opacity="0.1"/>
-        <text font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="16" font-style="condensed" letter-spacing=".234">
-            <tspan x="51.027" y="91">Image</tspan>
-        </text>
-        <path  d="M56 22h36a2 2 0 0 1 2 2v36a2 2 0 0 1-2 2H56a2 2 0 0 1-2-2V24a2 2 0 0 1 2-2zm30 16.832c0-.323-.034-.733-.103-1.227a16.03 16.03 0 0 0-.308-1.585c-.137-.563-.34-1.04-.61-1.432-.269-.392-.57-.588-.904-.588-.206 0-.392.02-.559.058a1.39 1.39 0 0 0-.468.204 4.078 4.078 0 0 0-.347.256 7.138 7.138 0 0 0-.378.358l-.379.377c-.334.315-.82.556-1.457.722-.637.166-1.337.269-2.098.307-.762.038-1.525.064-2.291.077-.766.012-1.534.05-2.304.115-.77.064-1.39.172-1.861.326-.933.307-1.805.713-2.618 1.22-.813.508-1.543 1.1-2.189 1.778a7.629 7.629 0 0 0-1.527 2.358 7.252 7.252 0 0 0-.558 2.813c0 .451.038.895.115 1.33.017.085.086.272.206.562.12.29.18.452.18.486 0 .162-.133.366-.399.613a9.292 9.292 0 0 1-.872.716c-.317.23-.608.51-.873.837-.265.329-.398.642-.398.94a.762.762 0 0 0 .058.294c.013.026.036.068.07.128a5.596 5.596 0 0 0 .424.678c.085.11.218.213.398.306.18.094.398.141.654.141.248 0 .505-.136.77-.41.266-.272.49-.57.674-.894.184-.324.377-.622.578-.895.2-.273.37-.409.507-.409.197 0 .607.158 1.232.473.625.315 1.001.494 1.13.537 1.18.4 2.404.6 3.67.6 1.917 0 3.79-.46 5.622-1.38 1.874-.929 3.403-2.07 4.588-3.426 1.185-1.355 1.975-2.987 2.368-4.896A12.27 12.27 0 0 0 86 38.832zm-6.571 2.532a.785.785 0 0 1-.244.575.79.79 0 0 1-.578.243c-1.557 0-2.898.221-4.024.665-1.125.443-2.273 1.193-3.446 2.25a54.26 54.26 0 0 0-.86.843c-.402.4-.718.703-.95.908a.85.85 0 0 1-.577.243.79.79 0 0 1-.578-.243.785.785 0 0 1-.243-.575c0-.205.08-.397.243-.576 1.044-1.15 2.052-2.085 3.023-2.806.971-.72 2.081-1.29 3.33-1.713 1.25-.422 2.61-.633 4.082-.633a.79.79 0 0 1 .578.243.785.785 0 0 1 .244.576z"/>
-    </g>
-</svg>
-
-                    
-                    </div>
-                    <div class="block-button" onClick="buttonEdit()">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="100" viewBox="0 0 147 100">
-    <defs>
-        <path id="a" d="M53 24.5V33h-2v-8.5L44 28l8-16 8 16-7-3.5z"/>
-    </defs>
-    <g class="b-fill" fill-rule="evenodd">
-        <path  d="M0 0h146.5v100H0z" opacity="0.1"/>
-        <path   d="M51.5 34h44c5.799 0 10.5 4.701 10.5 10.5S101.299 55 95.5 55h-44C45.701 55 41 50.299 41 44.5S45.701 34 51.5 34zm4.115 8.885a1.615 1.615 0 1 0 0 3.23h36.636a1.615 1.615 0 0 0 0-3.23H55.615z" />
-        <g transform="rotate(-45 113.542 -9.991)">
-            <use class="b-fill" xlink:href="#a"/>
-            <path class="b-fill"  stroke="#ffffff" stroke-width="2" d="M53.5 25.309V33.5h-3v-8.191l-7.618 3.809L52 10.882l9.118 18.236-7.618-3.809z"/>
-        </g>
-        <text  font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="16" font-style="condensed" letter-spacing=".234">
-            <tspan x="48.965" y="91">Button</tspan>
-        </text>
-    </g>
-</svg>
-
-                    
-                    </div>
-                    <div class="block-html" onClick="htmlEdit()">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="147" height="100" viewBox="0 0 147 100">
-    <g class="b-fill"  fill-rule="evenodd">
-        <path d="M0 0h146.5v100H0z" opacity=".1"/>
-        <path   fill-rule="nonzero" d="M67.576 47.842l-.837.838a.53.53 0 0 1-.77 0l-7.802-7.802a.53.53 0 0 1 0-.77l7.802-7.801a.53.53 0 0 1 .77 0l.837.837a.53.53 0 0 1 0 .77l-6.58 6.58 6.58 6.578a.53.53 0 0 1 0 .77zM77.47 29.98l-6.245 21.612a.545.545 0 0 1-.259.327.467.467 0 0 1-.393.042l-1.038-.285a.545.545 0 0 1-.327-.26.501.501 0 0 1-.042-.41l6.245-21.612a.545.545 0 0 1 .26-.327.467.467 0 0 1 .393-.041l1.038.284a.545.545 0 0 1 .326.26.501.501 0 0 1 .042.41zm10.999 10.898l-7.802 7.802a.53.53 0 0 1-.77 0l-.837-.838a.53.53 0 0 1 0-.77l6.58-6.579-6.58-6.58a.53.53 0 0 1 0-.77l.837-.836a.53.53 0 0 1 .77 0l7.802 7.801a.53.53 0 0 1 0 .77z" class="b-fill"/>
-        <text  font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="16" font-style="condensed" letter-spacing=".234">
-            <tspan x="53.324" y="91">HTML</tspan>
-        </text>
-    </g>
-</svg>
-
-                    
-                    
-                    </div>
-                    </div>
-                    <div class="block-action">
-                    <a href="javascript:void(0)"  class="btn button-default block-dissmiss" onClick="dismissBlock();">Cancel</a>
-<!--                        <a href="javascript:void(0)" class="btn button-primary">Ok</a>-->
-                    </div>
-                        </div>
-                    <div class="block-settings block-body-text">
-                    <div class="block-text-header">
-                        <div class="text-to-block" onclick="backToBlock('text')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-    <path fill="#1B72F8" fill-rule="nonzero" d="M8.414 12H22a1 1 0 0 1 0 2H8.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L8.414 12z"/>
-</svg> </div><p>Text</p>
-</div>
-                        <h2>Your Text</h2>
-                        <div class="editor">Enter your content  </div>
-                        <div class="block-action">
-                    <a href="javascript:void(0)"  class="btn button-default block-dissmiss" onClick="backToBlock('text')">Cancel</a>
-                        <a href="javascript:void(0)" onClick="saveText('text')" class="btn button-primary">Ok</a>
-                    </div>
-                    </div>
-                    <div class=" block-settings block-body-image">
-                    <div class="block-text-header">
-                        <div class="text-to-block" onclick="backToBlock('image')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-    <path fill="#1B72F8" fill-rule="nonzero" d="M8.414 12H22a1 1 0 0 1 0 2H8.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L8.414 12z"/>
-</svg> </div><p>Images</p>
-</div>
-                            
-                             <div class="imageContent">
-                                   <h2>Select image</h2>
-                                <input id="inp" type='file' class="">
-                            
-                             <h4 class="content-heading">Button Placement</h4>
-                               <div class="button-placement">
-        <div onClick="imgPlacement('left', $(this))" class="imgPlacement">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
-                <defs>
-                    <rect id="a" width="62.67" height="36" rx="4" />
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                    <use fill="#FFF" xlink:href="#a" />
-                    <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
-                    <rect width="2" height="20" x="5" y="8" fill="#D8D8D8" rx="1" />
-                    <path fill="#D8D8D8" fill-rule="nonzero" d="M10.414 17H24a1 1 0 0 1 0 2H10.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L10.414 17z" />
-                </g>
-            </svg>
-        </div>
+                        <div class="block-contents">
+                            <div class="block-text" onClick="textEdit()">
 
 
-        <div onClick="imgPlacement('right', $(this))" class="imgPlacement">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
-                <defs>
-                    <rect id="a" width="62.67" height="36" rx="4" />
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                    <g>
-                        <use fill="#FFF" xlink:href="#a" />
-                        <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
-                    </g>
-                    <path fill="#D8D8D8" d="M51.586 17H38a1 1 0 0 0 0 2h13.586l-4.293 4.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L51.586 17zM56 8a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1z" />
-                </g>
-            </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="147" height="100" viewBox="0 0 147 100">
+                                    <g class="b-fill" fill-rule="evenodd">
+                                        <path d="M0 0h146.5v100H0z" opacity=".1" />
+                                        <path d="M56 25h38a1 1 0 0 1 0 2H56a1 1 0 1 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 1 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 1 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h38a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2zm0 4h25a1 1 0 0 1 0 2H56a1 1 0 0 1 0-2z" opacity="1" />
+                                        <text font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="16" font-style="condensed" letter-spacing=".234">
+                                            <tspan x="58.48" y="91">Text</tspan>
+                                        </text>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="block-image" onClick="imageEdit()">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="147" height="100" viewBox="0 0 147 100">
+                                    <g class="b-fill" fill-rule="evenodd">
+                                        <path d="M0 0h146.5v100H0z" opacity="0.1" />
+                                        <text font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="16" font-style="condensed" letter-spacing=".234">
+                                            <tspan x="51.027" y="91">Image</tspan>
+                                        </text>
+                                        <path d="M56 22h36a2 2 0 0 1 2 2v36a2 2 0 0 1-2 2H56a2 2 0 0 1-2-2V24a2 2 0 0 1 2-2zm30 16.832c0-.323-.034-.733-.103-1.227a16.03 16.03 0 0 0-.308-1.585c-.137-.563-.34-1.04-.61-1.432-.269-.392-.57-.588-.904-.588-.206 0-.392.02-.559.058a1.39 1.39 0 0 0-.468.204 4.078 4.078 0 0 0-.347.256 7.138 7.138 0 0 0-.378.358l-.379.377c-.334.315-.82.556-1.457.722-.637.166-1.337.269-2.098.307-.762.038-1.525.064-2.291.077-.766.012-1.534.05-2.304.115-.77.064-1.39.172-1.861.326-.933.307-1.805.713-2.618 1.22-.813.508-1.543 1.1-2.189 1.778a7.629 7.629 0 0 0-1.527 2.358 7.252 7.252 0 0 0-.558 2.813c0 .451.038.895.115 1.33.017.085.086.272.206.562.12.29.18.452.18.486 0 .162-.133.366-.399.613a9.292 9.292 0 0 1-.872.716c-.317.23-.608.51-.873.837-.265.329-.398.642-.398.94a.762.762 0 0 0 .058.294c.013.026.036.068.07.128a5.596 5.596 0 0 0 .424.678c.085.11.218.213.398.306.18.094.398.141.654.141.248 0 .505-.136.77-.41.266-.272.49-.57.674-.894.184-.324.377-.622.578-.895.2-.273.37-.409.507-.409.197 0 .607.158 1.232.473.625.315 1.001.494 1.13.537 1.18.4 2.404.6 3.67.6 1.917 0 3.79-.46 5.622-1.38 1.874-.929 3.403-2.07 4.588-3.426 1.185-1.355 1.975-2.987 2.368-4.896A12.27 12.27 0 0 0 86 38.832zm-6.571 2.532a.785.785 0 0 1-.244.575.79.79 0 0 1-.578.243c-1.557 0-2.898.221-4.024.665-1.125.443-2.273 1.193-3.446 2.25a54.26 54.26 0 0 0-.86.843c-.402.4-.718.703-.95.908a.85.85 0 0 1-.577.243.79.79 0 0 1-.578-.243.785.785 0 0 1-.243-.575c0-.205.08-.397.243-.576 1.044-1.15 2.052-2.085 3.023-2.806.971-.72 2.081-1.29 3.33-1.713 1.25-.422 2.61-.633 4.082-.633a.79.79 0 0 1 .578.243.785.785 0 0 1 .244.576z" />
+                                    </g>
+                                </svg>
 
 
-        </div>
+                            </div>
+                            <div class="block-button" onClick="buttonEdit()">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="100" viewBox="0 0 147 100">
+                                    <defs>
+                                        <path id="a" d="M53 24.5V33h-2v-8.5L44 28l8-16 8 16-7-3.5z" />
+                                    </defs>
+                                    <g class="b-fill" fill-rule="evenodd">
+                                        <path d="M0 0h146.5v100H0z" opacity="0.1" />
+                                        <path d="M51.5 34h44c5.799 0 10.5 4.701 10.5 10.5S101.299 55 95.5 55h-44C45.701 55 41 50.299 41 44.5S45.701 34 51.5 34zm4.115 8.885a1.615 1.615 0 1 0 0 3.23h36.636a1.615 1.615 0 0 0 0-3.23H55.615z" />
+                                        <g transform="rotate(-45 113.542 -9.991)">
+                                            <use class="b-fill" xlink:href="#a" />
+                                            <path class="b-fill" stroke="#ffffff" stroke-width="2" d="M53.5 25.309V33.5h-3v-8.191l-7.618 3.809L52 10.882l9.118 18.236-7.618-3.809z" />
+                                        </g>
+                                        <text font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="16" font-style="condensed" letter-spacing=".234">
+                                            <tspan x="48.965" y="91">Button</tspan>
+                                        </text>
+                                    </g>
+                                </svg>
+
+
+                            </div>
+                            <div class="block-html" onClick="htmlEdit()">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="147" height="100" viewBox="0 0 147 100">
+                                    <g class="b-fill" fill-rule="evenodd">
+                                        <path d="M0 0h146.5v100H0z" opacity=".1" />
+                                        <path fill-rule="nonzero" d="M67.576 47.842l-.837.838a.53.53 0 0 1-.77 0l-7.802-7.802a.53.53 0 0 1 0-.77l7.802-7.801a.53.53 0 0 1 .77 0l.837.837a.53.53 0 0 1 0 .77l-6.58 6.58 6.58 6.578a.53.53 0 0 1 0 .77zM77.47 29.98l-6.245 21.612a.545.545 0 0 1-.259.327.467.467 0 0 1-.393.042l-1.038-.285a.545.545 0 0 1-.327-.26.501.501 0 0 1-.042-.41l6.245-21.612a.545.545 0 0 1 .26-.327.467.467 0 0 1 .393-.041l1.038.284a.545.545 0 0 1 .326.26.501.501 0 0 1 .042.41zm10.999 10.898l-7.802 7.802a.53.53 0 0 1-.77 0l-.837-.838a.53.53 0 0 1 0-.77l6.58-6.579-6.58-6.58a.53.53 0 0 1 0-.77l.837-.836a.53.53 0 0 1 .77 0l7.802 7.801a.53.53 0 0 1 0 .77z" class="b-fill" />
+                                        <text font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="16" font-style="condensed" letter-spacing=".234">
+                                            <tspan x="53.324" y="91">HTML</tspan>
+                                        </text>
+                                    </g>
+                                </svg>
 
 
 
-
-
-
-        <div onClick="imgPlacement('center', $(this))" class="imgPlacement">
-
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
-                <defs>
-                    <rect id="a" width="62.67" height="36" rx="4" />
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                    <g>
-                        <use fill="#FFF" xlink:href="#a" />
-                        <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
-                    </g>
-                    <path fill="#D8D8D8" fill-rule="nonzero" d="M35.414 17H49a1 1 0 0 1 0 2H35.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L35.414 17zm-8.828 2H13a1 1 0 0 1 0-2h13.586l-4.293-4.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L26.586 19zM31 8a1 1 0 0 1 1 1v18a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z" />
-                </g>
-            </svg>
-
-        </div>
-
-
-
-
-
-        <div onClick="imgPlacement('block', $(this))" class="imgPlacement">
-
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
-                <defs>
-                    <rect id="a" width="62.67" height="36" rx="4" />
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                    <g>
-                        <use fill="#FFF" xlink:href="#a" />
-                        <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
-                    </g>
-                    <path fill="#D8D8D8" d="M51.586 17H38a1 1 0 0 0 0 2h13.586l-4.293 4.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L51.586 17zM56 8a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1zM10.414 17H24a1 1 0 0 1 0 2H10.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L10.414 17zM6 8a1 1 0 0 1 1 1v18a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z" />
-                </g>
-            </svg>
-
-
-        </div>
-
-
-
-
-    </div>
-                                 <div class="button-forms">
-                                <label>Image URL</label>
-                            <input type="text" class="img-url" placeholder="http://yoursite.com" />
                             </div>
                         </div>
-<!--
+                        <div class="block-action">
+                            <a href="javascript:void(0)" class="btn button-default block-dissmiss" onClick="dismissBlock();">Cancel</a>
+                            <!--                        <a href="javascript:void(0)" class="btn button-primary">Ok</a>-->
+                        </div>
+                    </div>
+                    <div class="block-settings block-body-text">
+                        <div class="block-text-header">
+                            <div class="text-to-block" onclick="backToBlock('text')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                                    <path fill="#1B72F8" fill-rule="nonzero" d="M8.414 12H22a1 1 0 0 1 0 2H8.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L8.414 12z" />
+                                </svg>
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <h2>Your Text</h2>
+                        <div class="editor">Enter your content </div>
+                        <div class="block-action">
+                            <a href="javascript:void(0)" class="btn button-default block-dissmiss" onClick="backToBlock('text')">Cancel</a>
+                            <a href="javascript:void(0)" onClick="saveText('text')" class="btn button-primary">Ok</a>
+                        </div>
+                    </div>
+                    <div class=" block-settings block-body-image">
+                        <div class="block-text-header">
+                            <div class="text-to-block" onclick="backToBlock('image')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                                    <path fill="#1B72F8" fill-rule="nonzero" d="M8.414 12H22a1 1 0 0 1 0 2H8.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L8.414 12z" />
+                                </svg>
+                            </div>
+                            <p>Images</p>
+                        </div>
+
+                        <div class="imageContent">
+                            <h2>Select image</h2>
+                            <input id="inp" type='file' class="">
+
+                            <h4 class="content-heading">Button Placement</h4>
+                            <div class="button-placement">
+                                <div onClick="imgPlacement('left', $(this))" class="imgPlacement">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                                        <defs>
+                                            <rect id="a" width="62.67" height="36" rx="4" />
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <use fill="#FFF" xlink:href="#a" />
+                                            <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                                            <rect width="2" height="20" x="5" y="8" fill="#D8D8D8" rx="1" />
+                                            <path fill="#D8D8D8" fill-rule="nonzero" d="M10.414 17H24a1 1 0 0 1 0 2H10.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L10.414 17z" />
+                                        </g>
+                                    </svg>
+                                </div>
+
+
+                                <div onClick="imgPlacement('right', $(this))" class="imgPlacement">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                                        <defs>
+                                            <rect id="a" width="62.67" height="36" rx="4" />
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <g>
+                                                <use fill="#FFF" xlink:href="#a" />
+                                                <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                                            </g>
+                                            <path fill="#D8D8D8" d="M51.586 17H38a1 1 0 0 0 0 2h13.586l-4.293 4.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L51.586 17zM56 8a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1z" />
+                                        </g>
+                                    </svg>
+
+
+                                </div>
+
+
+
+
+
+
+                                <div onClick="imgPlacement('center', $(this))" class="imgPlacement">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                                        <defs>
+                                            <rect id="a" width="62.67" height="36" rx="4" />
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <g>
+                                                <use fill="#FFF" xlink:href="#a" />
+                                                <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                                            </g>
+                                            <path fill="#D8D8D8" fill-rule="nonzero" d="M35.414 17H49a1 1 0 0 1 0 2H35.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L35.414 17zm-8.828 2H13a1 1 0 0 1 0-2h13.586l-4.293-4.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L26.586 19zM31 8a1 1 0 0 1 1 1v18a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z" />
+                                        </g>
+                                    </svg>
+
+                                </div>
+
+
+
+
+
+                                <div onClick="imgPlacement('block', $(this))" class="imgPlacement">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                                        <defs>
+                                            <rect id="a" width="62.67" height="36" rx="4" />
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <g>
+                                                <use fill="#FFF" xlink:href="#a" />
+                                                <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                                            </g>
+                                            <path fill="#D8D8D8" d="M51.586 17H38a1 1 0 0 0 0 2h13.586l-4.293 4.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L51.586 17zM56 8a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1zM10.414 17H24a1 1 0 0 1 0 2H10.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L10.414 17zM6 8a1 1 0 0 1 1 1v18a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z" />
+                                        </g>
+                                    </svg>
+
+
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="button-forms">
+                                <label>Image URL</label>
+                                <input type="text" class="img-url" placeholder="http://yoursite.com" />
+                            </div>
+                        </div>
+                        <!--
 <p id="b64"></p>
 <img id="img" height="150">
 -->
-                     
+
                         <div class="block-action">
-<!--                    <a href="javascript:void(0)"  class="btn button-default block-dissmiss" onClick="backToBlock('text')">Cancel</a>-->
-                        <a href="javascript:void(0)" onClick="saveText('image')" class="btn button-primary">Ok</a>
-                    </div>
+                            <!--                    <a href="javascript:void(0)"  class="btn button-default block-dissmiss" onClick="backToBlock('text')">Cancel</a>-->
+                            <a href="javascript:void(0)" onClick="saveText('image')" class="btn button-primary">Ok</a>
+                        </div>
                     </div>
                     <div class=" block-settings block-body-button">
-                    <div class="block-text-header">
-                        <div class="text-to-block" onclick="backToBlock('button')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-    <path fill="#1B72F8" fill-rule="nonzero" d="M8.414 12H22a1 1 0 0 1 0 2H8.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L8.414 12z"/>
-</svg> </div><p>Button</p>
-</div>
+                        <div class="block-text-header">
+                            <div class="text-to-block" onclick="backToBlock('button')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                                    <path fill="#1B72F8" fill-rule="nonzero" d="M8.414 12H22a1 1 0 0 1 0 2H8.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L8.414 12z" />
+                                </svg>
+                            </div>
+                            <p>Button</p>
+                        </div>
                         <div class="buttonContent">
                             <h2>Customise Button </h2>
                             <div class="button-forms">
                                 <label>Button Text</label>
-                            <input type="text" class="btn-text" placeholder="Button Text" />
+                                <input type="text" class="btn-text" placeholder="Button Text" />
                             </div>
                             <div class="button-forms">
                                 <label>Button Link</label>
-                            <input type="text" class="btn-link" placeholder="http://www.yoursite.com" />
+                                <input type="text" class="btn-link" placeholder="http://www.yoursite.com" />
                             </div>
                             <div class="button-forms">
                                 <label>Button Color</label>
-                            <input type="text" class="btn-color" placeholder="Button Text" />
-                            <input type="text" class="" id="btnBgColor"/>
+                                <input type="text" class="btn-color" placeholder="Button Text" />
+                                <input type="text" class="" id="btnBgColor" />
                             </div>
                             <div class="button-forms">
                                 <label>Text Color</label>
-                            <input type="text" class="btn-text-color" placeholder="Button Text" />
-                               <input type='text' id="textColor" />
+                                <input type="text" class="btn-text-color" placeholder="Button Text" />
+                                <input type='text' id="textColor" />
 
                             </div>
                             <h4 class="content-heading">Padding</h4>
                             <div class="button-group">
-                            <div class="button-forms">
-                                <label>Top and Bottom</label>
-                            <input type="number" class="pad-tb" placeholder="10px" value="10" />
+                                <div class="button-forms">
+                                    <label>Top and Bottom</label>
+                                    <input type="number" class="pad-tb" placeholder="10px" value="10" />
+                                </div>
+                                <div class="button-forms">
+                                    <label>Left and right</label>
+                                    <input type="number" class="pad-rl" placeholder="10px" value="10" />
+                                </div>
                             </div>
-                            <div class="button-forms">
-                                <label>Left and right</label>
-                            <input type="number" class="pad-rl" placeholder="10px" value="10" />
+                            <h4 class="content-heading">Button Placement</h4>
+                            <div class="button-placement">
+                                <div onClick="btnPlacement('left', $(this))" class="buttonPlacement bLeft">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                                        <defs>
+                                            <rect id="a" width="62.67" height="36" rx="4" />
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <use fill="#FFF" xlink:href="#a" />
+                                            <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                                            <rect width="2" height="20" x="5" y="8" fill="#D8D8D8" rx="1" />
+                                            <path fill="#D8D8D8" fill-rule="nonzero" d="M10.414 17H24a1 1 0 0 1 0 2H10.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L10.414 17z" />
+                                        </g>
+                                    </svg>
+                                </div>
+
+
+                                <div onClick="btnPlacement('right', $(this))" class="buttonPlacement bRight">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                                        <defs>
+                                            <rect id="a" width="62.67" height="36" rx="4" />
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <g>
+                                                <use fill="#FFF" xlink:href="#a" />
+                                                <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                                            </g>
+                                            <path fill="#D8D8D8" d="M51.586 17H38a1 1 0 0 0 0 2h13.586l-4.293 4.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L51.586 17zM56 8a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1z" />
+                                        </g>
+                                    </svg>
+
+
+                                </div>
+
+
+
+
+
+
+                                <div onClick="btnPlacement('center', $(this))" class="buttonPlacement bCenter">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                                        <defs>
+                                            <rect id="a" width="62.67" height="36" rx="4" />
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <g>
+                                                <use fill="#FFF" xlink:href="#a" />
+                                                <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                                            </g>
+                                            <path fill="#D8D8D8" fill-rule="nonzero" d="M35.414 17H49a1 1 0 0 1 0 2H35.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L35.414 17zm-8.828 2H13a1 1 0 0 1 0-2h13.586l-4.293-4.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L26.586 19zM31 8a1 1 0 0 1 1 1v18a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z" />
+                                        </g>
+                                    </svg>
+
+                                </div>
+
+
+
+
+
+                                <div onClick="btnPlacement('block', $(this))" class="buttonPlacement bBlock">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
+                                        <defs>
+                                            <rect id="a" width="62.67" height="36" rx="4" />
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <g>
+                                                <use fill="#FFF" xlink:href="#a" />
+                                                <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
+                                            </g>
+                                            <path fill="#D8D8D8" d="M51.586 17H38a1 1 0 0 0 0 2h13.586l-4.293 4.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L51.586 17zM56 8a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1zM10.414 17H24a1 1 0 0 1 0 2H10.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L10.414 17zM6 8a1 1 0 0 1 1 1v18a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z" />
+                                        </g>
+                                    </svg>
+
+
+                                </div>
+
+
+
+
                             </div>
-                            </div>
-                             <h4 class="content-heading">Button Placement</h4>
-                               <div class="button-placement">
-        <div onClick="btnPlacement('left', $(this))" class="buttonPlacement bLeft">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
-                <defs>
-                    <rect id="a" width="62.67" height="36" rx="4" />
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                    <use fill="#FFF" xlink:href="#a" />
-                    <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
-                    <rect width="2" height="20" x="5" y="8" fill="#D8D8D8" rx="1" />
-                    <path fill="#D8D8D8" fill-rule="nonzero" d="M10.414 17H24a1 1 0 0 1 0 2H10.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L10.414 17z" />
-                </g>
-            </svg>
-        </div>
-
-
-        <div onClick="btnPlacement('right', $(this))" class="buttonPlacement bRight">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
-                <defs>
-                    <rect id="a" width="62.67" height="36" rx="4" />
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                    <g>
-                        <use fill="#FFF" xlink:href="#a" />
-                        <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
-                    </g>
-                    <path fill="#D8D8D8" d="M51.586 17H38a1 1 0 0 0 0 2h13.586l-4.293 4.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L51.586 17zM56 8a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1z" />
-                </g>
-            </svg>
-
-
-        </div>
-
-
-
-
-
-
-        <div onClick="btnPlacement('center', $(this))" class="buttonPlacement bCenter">
-
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
-                <defs>
-                    <rect id="a" width="62.67" height="36" rx="4" />
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                    <g>
-                        <use fill="#FFF" xlink:href="#a" />
-                        <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
-                    </g>
-                    <path fill="#D8D8D8" fill-rule="nonzero" d="M35.414 17H49a1 1 0 0 1 0 2H35.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L35.414 17zm-8.828 2H13a1 1 0 0 1 0-2h13.586l-4.293-4.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L26.586 19zM31 8a1 1 0 0 1 1 1v18a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z" />
-                </g>
-            </svg>
-
-        </div>
-
-
-
-
-
-        <div onClick="btnPlacement('block', $(this))" class="buttonPlacement bBlock">
-
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="36" viewBox="0 0 63 36">
-                <defs>
-                    <rect id="a" width="62.67" height="36" rx="4" />
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                    <g>
-                        <use fill="#FFF" xlink:href="#a" />
-                        <rect width="61.67" height="35" x=".5" y=".5" stroke="#D8D8D8" rx="4" />
-                    </g>
-                    <path fill="#D8D8D8" d="M51.586 17H38a1 1 0 0 0 0 2h13.586l-4.293 4.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L51.586 17zM56 8a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1zM10.414 17H24a1 1 0 0 1 0 2H10.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L10.414 17zM6 8a1 1 0 0 1 1 1v18a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z" />
-                </g>
-            </svg>
-
-
-        </div>
-
-
-
-
-    </div>
                         </div>
                         <div class="block-action">
-<!--                    <a href="javascript:void(0)"  class="btn button-default block-dissmiss" onClick="backToBlock('text')">Cancel</a>-->
-                        <a href="javascript:void(0)" onClick="saveText('button')" class="btn button-primary">Ok</a>
+                            <!--                    <a href="javascript:void(0)"  class="btn button-default block-dissmiss" onClick="backToBlock('text')">Cancel</a>-->
+                            <a href="javascript:void(0)" onClick="saveText('button')" class="btn button-primary">Ok</a>
+                        </div>
                     </div>
-                    </div>
-                    
+
                     <div class="block-settings block-body-html">
-                    <div class="block-text-header">
-                        <div class="text-to-block" onclick="backToBlock('html')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-    <path fill="#1B72F8" fill-rule="nonzero" d="M8.414 12H22a1 1 0 0 1 0 2H8.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L8.414 12z"/>
-</svg> </div><p>HTML</p>
-</div>
+                        <div class="block-text-header">
+                            <div class="text-to-block" onclick="backToBlock('html')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                                    <path fill="#1B72F8" fill-rule="nonzero" d="M8.414 12H22a1 1 0 0 1 0 2H8.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L8.414 12z" />
+                                </svg>
+                            </div>
+                            <p>HTML</p>
+                        </div>
                         <h2>Your HTML</h2>
-                        <div class=""><textarea class="htmlData" rows="4"></textarea>
-                        <div class="helpText"><strong>Note:</strong> We are not responsible for the compatible issues.</div>
+                        <div class="">
+                            <textarea class="htmlData" rows="4"></textarea>
+                            <div class="helpText"><strong>Note:</strong> We are not responsible for the compatible issues.</div>
                         </div>
                         <div class="block-action">
-                    <a href="javascript:void(0)"  class="btn button-default block-dissmiss" onClick="backToBlock('html')">Cancel</a>
-                        <a href="javascript:void(0)" onClick="saveText('html')" class="btn button-primary">Ok</a>
-                    </div>
+                            <a href="javascript:void(0)" class="btn button-default block-dissmiss" onClick="backToBlock('html')">Cancel</a>
+                            <a href="javascript:void(0)" onClick="saveText('html')" class="btn button-primary">Ok</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card-settings" data-target="settings" data-right="tab"></div>
+                <div class="card-settings" data-target="settings" data-right="tab">
+                    <h2>Page Settings</h2>
 
+                    <div class="button-forms">
+                        <label>Page Background Color</label>
+                        <input type="text" class="pageBgColor" placeholder="Page Background" />
+                        <input type='text' id="pageBgColor" />
+
+                    </div>
+                    <div class="button-forms">
+                        <label>Page Padding</label>
+                        <input type="number" class="pagePaddingg" value="10" />
+                    </div>
+                    
+                    <div class="button-forms">
+                        <label>Content Background Color</label>
+                        <input type="text" class="cntBg" placeholder="Content Background" />
+                        <input type='text' id="cntBg" />
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
-    
-
-<!--    One grid-->
-    <div id="gridOne" class="hide-card">
-        <div class="layoutAction"><div class="drag-handle"><img src="assets/img/move.svg"></div><a class="delete-handle"  onclick="deleteLayout($(this))"><img src="assets/img/trash.svg"></a></div>
-    <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none; background-color: #fff">
-        <tr>
-        <td style="padding: 10px 15px; vertical-align: top;">
-          
-            </td>
-        </tr>
-        </table>
-    </div>
-    
-    <!--    Two grid 50%-->
-    <div id="gridTwo" class="hide-card">
-    <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none; background-color: #fff">
-        <tr>
-        <td style="width: 300px; padding: 10px 15px; vertical-align: top;">
-            
-          
-            </td>
-        <td style="width: 300px; padding: 10px 15px; vertical-align: top;">
-            
-           
-            
-            </td>
-        </tr>
-        </table>
-    </div>
-        
-    <!--    Third grid 33% 67%-->
-    <div id="gridThree-3367" class="hide-card">
-    <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none; background-color: #fff">
-        <tr>
-        <td style="width: 198px; padding: 10px 15px; vertical-align: top;">
-            
-         
-            
-            </td>
-        <td style="width: 402px; padding: 10px 15px; vertical-align: top; ">
-    
-            
-            </td>
-        </tr>
-        </table>
-    </div>
-    
-       <!--    Fourth grid  67% 33% -->
-    <div id="gridFour-6733" class="hide-card">
-    <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none; background-color: #fff">
-        <tr>
-            <td style="width: 402px; padding: 10px 15px; vertical-align: top;">
-           
-            </td>
-            <td style="width: 198px; padding: 10px 15px; vertical-align: top;">
-           
-            </td>
-        </tr>
-        </table>
-    </div>
-    
-    
-     <!--    Fifth grid 33% 33% 33% -->
-    <div id="gridFive-33" class="hide-card">
-    <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none; background-color: #fff">
-        <tr>
-            <td style="width: 200px; padding: 10px 15px; vertical-align: top;">
-        
-            </td>
-            <td style="width: 200px; padding: 10px 15px; vertical-align: top;">
-            
-            </td>
-            <td style="width: 200px; padding: 10px 15px; vertical-align: top;">
-        
-            </td>
-        </tr>
-        </table>
-    </div>
-    
-    <!--    Sixth grid 25% 25% 25% 25% -->
-    <div id="gridFive-25" class="hide-card">
-    <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none;">
-        <tr>
-            <td style="width: 150px;padding: 10px 15px; vertical-align: top;">
-           
-            </td>
-            <td style="width: 150px;padding: 10px 15px; vertical-align: top;">
-           
-            </td>
-            <td style="width: 150px;padding: 10px 15px; vertical-align: top;">
-           
-            </td>
-            <td style="width: 150px;padding: 10px 15px; vertical-align: top;">
-           
-            </td>
-        </tr>
-        </table>
-    </div>
-    
-    
-    
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=euhd5bvqi5b63yl5jo560yvpjed758sg6nvz2xheyihqatzw"></script>
-    <script src="assets/js/Sortable.min.js"></script>
-    
-    <script src="assets/js/draganddrop.js"></script>
-    
-    <script src="assets/js/campaign-creat.js"></script>
-    <script src="assets/js/image-editor.js"></script>
-    <script src="assets/js/settings.js"></script>
-    <script src="assets/js/button-editor.js"></script>
-    <script src="assets/js/html-editor.js"></script>
-    <script src="assets/js/spectrum.js"></script>
-<!--    <script src="assets/js/dropzone.js"></script>-->
 
 
-<script>
-$("#textColor").spectrum({
-    color: "#f00",
-     preferredFormat: "rgb",
-    showInput: true
-});
-    $("#btnBgColor").spectrum({
-    color: "#f00",
-        preferredFormat: "rgb",
-    showInput: true
-});
-</script>
-    <script>
-        
-  
-    
-    </script>
-    <script type="text/javascript">
-    
-</script>
+        <!--    One grid-->
+        <div id="gridOne" class="hide-card">
+            <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none; background-color: #fff">
+                <tr>
+                    <td style="padding: 15px 15px; vertical-align: top;">
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--    Two grid 50%-->
+        <div id="gridTwo" class="hide-card">
+            <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none; background-color: #fff">
+                <tr>
+                    <td style="width: 300px; padding: 10px 15px; vertical-align: top;">
+
+
+                    </td>
+                    <td style="width: 300px; padding: 10px 15px; vertical-align: top;">
+
+
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--    Third grid 33% 67%-->
+        <div id="gridThree-3367" class="hide-card">
+            <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none; background-color: #fff">
+                <tr>
+                    <td style="width: 198px; padding: 10px 15px; vertical-align: top;">
+
+
+
+                    </td>
+                    <td style="width: 402px; padding: 10px 15px; vertical-align: top; ">
+
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--    Fourth grid  67% 33% -->
+        <div id="gridFour-6733" class="hide-card">
+            <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none; background-color: #fff">
+                <tr>
+                    <td style="width: 402px; padding: 10px 15px; vertical-align: top;">
+
+                    </td>
+                    <td style="width: 198px; padding: 10px 15px; vertical-align: top;">
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!--    Fifth grid 33% 33% 33% -->
+        <div id="gridFive-33" class="hide-card">
+            <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none; background-color: #fff">
+                <tr>
+                    <td style="width: 200px; padding: 10px 15px; vertical-align: top;">
+
+                    </td>
+                    <td style="width: 200px; padding: 10px 15px; vertical-align: top;">
+
+                    </td>
+                    <td style="width: 200px; padding: 10px 15px; vertical-align: top;">
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--    Sixth grid 25% 25% 25% 25% -->
+        <div id="gridFive-25" class="hide-card">
+            <table style="border-collapse: collapse;width: 600px; margin:0 auto; table-layout: fixed; border: none;">
+                <tr>
+                    <td style="width: 150px;padding: 10px 15px; vertical-align: top;">
+
+                    </td>
+                    <td style="width: 150px;padding: 10px 15px; vertical-align: top;">
+
+                    </td>
+                    <td style="width: 150px;padding: 10px 15px; vertical-align: top;">
+
+                    </td>
+                    <td style="width: 150px;padding: 10px 15px; vertical-align: top;">
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=euhd5bvqi5b63yl5jo560yvpjed758sg6nvz2xheyihqatzw"></script>
+        <script src="assets/js/Sortable.min.js"></script>
+
+        <script src="assets/js/draganddrop.js"></script>
+        <script src="assets/js/spectrum.js"></script>
+        <script src="assets/js/campaign-creat.js"></script>
+        <script src="assets/js/image-editor.js"></script>
+        <script src="assets/js/settings.js"></script>
+        <script src="assets/js/button-editor.js"></script>
+        <script src="assets/js/html-editor.js"></script>
+
+        <!--    <script src="assets/js/dropzone.js"></script>-->
+
+
+        <script>
+           
+        </script>
+
 </body>
 
 </html>

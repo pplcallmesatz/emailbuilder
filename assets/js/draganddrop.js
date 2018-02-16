@@ -28,6 +28,7 @@
                     $(evt.item).removeClass('card-chip');
                     
                     pageEmptyContent();
+                    contentBg();
                     
 //                    Adding empty div content
                     var emptyDiv= $(evt.item).find("td");
