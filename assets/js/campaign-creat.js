@@ -58,6 +58,7 @@ if(dataEditor != "true"){
     $(".currentAdding").each(function(){
         $(this).removeClass("currentAdding");
     });
+    $(".addedEditables").removeClass("addedEditables");
     $(e).addClass("addedEditables");
     $(e).parent().addClass("currentAdding");
     tabposition("blocks");
