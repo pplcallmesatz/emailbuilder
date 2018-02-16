@@ -46,7 +46,7 @@
 /*            text-align: center;*/
         }
         table tr td {
-            padding: 0px 15px;
+            padding: 10px 15px;
             vertical-align: top;
         }
     
@@ -249,7 +249,7 @@
 
                     
                     </div>
-                    <div class="block-html">
+                    <div class="block-html" onClick="htmlEdit()">
                     
                     <svg xmlns="http://www.w3.org/2000/svg" width="147" height="100" viewBox="0 0 147 100">
     <g class="b-fill"  fill-rule="evenodd">
@@ -521,7 +521,20 @@
                     </div>
                     </div>
                     
-                    
+                    <div class="block-settings block-body-html">
+                    <div class="block-text-header">
+                        <div class="text-to-block" onclick="backToBlock('html')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+    <path fill="#1B72F8" fill-rule="nonzero" d="M8.414 12H22a1 1 0 0 1 0 2H8.414l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L8.414 12z"/>
+</svg> </div><p>HTML</p>
+</div>
+                        <h2>Your HTML</h2>
+                        <div class=""><textarea class="htmlData" rows="4"></textarea></div>
+                        <div class="block-action">
+                    <a href="javascript:void(0)"  class="btn button-default block-dissmiss" onClick="backToBlock('html')">Cancel</a>
+                        <a href="javascript:void(0)" onClick="saveText('html')" class="btn button-primary">Ok</a>
+                    </div>
+                    </div>
                 </div>
                 <div class="card-settings" data-target="settings" data-right="tab"></div>
 
@@ -642,6 +655,7 @@
     <script src="assets/js/image-editor.js"></script>
     <script src="assets/js/settings.js"></script>
     <script src="assets/js/button-editor.js"></script>
+    <script src="assets/js/html-editor.js"></script>
     <script src="assets/js/spectrum.js"></script>
 <!--    <script src="assets/js/dropzone.js"></script>-->
 

@@ -153,10 +153,10 @@ top: 0;
 -moz-transition: all linear 0.25s;
 -o-transition: all linear 0.25s;
 }
-.block-body-text, .block-body-image, .block-body-button{
+.block-body-text, .block-body-image, .block-body-button,  .block-body-html{
     left: 100%;
 }
-.block-body-text.in, .block-body-image.in, .block-body-button.in{
+.block-body-text.in, .block-body-image.in, .block-body-button.in, .block-body-html.in{
     left: 0;
 }
 
@@ -239,7 +239,7 @@ margin-left: 10px;
     border: 2px solid #1B72F8;
 }
 
-.indiText, .indiImage, .indiButton{
+.indiText, .indiImage, .indiButton, .indiHtml{
     position: relative;
 }
 .contentAction{
@@ -273,7 +273,7 @@ margin-left: 10px;
     overflow: scroll;
 }
 
- .textContent {
+ .textContent , .htmlNowEditing{
 /*    background-color: rgba(0,0,0,0.05);*/
      border: 2px dotted red;
 }

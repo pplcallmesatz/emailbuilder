@@ -14,7 +14,8 @@ var clickable = $(".clickable"),
     rightMenu = $(".right-menu"),
     topNav = $(".topnav");
 var currentClick = "";
-var CopiedData = "";
+var CopiedData = "Enter your content";
+var CopiedHtmlData = "";
 
 
 //Page reload
@@ -132,7 +133,9 @@ function textEdit(e, samp){
     resetEditable(e, "text");
     
     if (dataContent === "none"){
-        console.log(true);  
+        tabposition("layouts");
+        alert("Please select the layout to add contents.")  
+        
     }
     else {
         dataEditor("true");
@@ -220,6 +223,23 @@ function saveText(e){
         $("#cards").attr("data-content", "none");
         dataEditor("false");
     } 
+   else if (e === "html"){
+        $(".block-body-html").removeClass("in");
+        $(".htmlNowEditing").removeClass("htmlNowEditing")
+       tabposition("layouts");
+        $("#cards > .parent-div").each(function(){
+           $(this).removeClass("alreadyClicked").removeClass("currentActive");
+        });
+        $(".currentAdding").removeClass("currentAdding");
+        $(".currentEditing").removeClass("currentEditing");
+        $(".addedEditables").removeClass("addedEditables");
+        $("[data-html=\"newEdit\"]").attr("data-html","edited");
+        removeLayoutSettingElementSupport();
+        $("#cards").attr("data-content", "none");
+        dataEditor("false");
+        var input = $(".htmlData");
+           input.val("");
+    } 
 
    else if (e === "image"){
         $(".block-body-image").removeClass("in");
@@ -241,7 +261,6 @@ function saveText(e){
         dataEditor("false");
           var input = $("#inp");
             var fileName = input.val();
-    console.log(fileName);
     if(fileName) { // returns true if the string is not empty
         input.val('');
     }
@@ -281,7 +300,7 @@ function deleteData(e){
     
     var deleteData = $(".deleteDataContent").html();
     if(deleteData === ""){
-        console.log("true");
+//        console.log("true");
                $(".deleteDataContent").append(html)
         $(".deleteDataContent").removeClass("deleteDataContent");
     }

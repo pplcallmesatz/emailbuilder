@@ -88,6 +88,11 @@ function addContentSettings(e, data){
     html = $.parseHTML( str );
      $(e).append(html);
      }
+        if ((dataEditor != "true")&&(data === "html")){
+         var str = "<div class=\"contentAction\"><div class=\"addData\" onClick=\"addData($(this))\"><img src=\"assets/img/plus.svg\" alt=\"add\"> </div><div class=\"editData\" onClick=\"htmlData($(this))\"><img src=\"assets/img/edit.svg\" alt=\"edit\"></div><div class=\"deleteData\" onClick=\"deleteData($(this))\"><img src=\"assets/img/trash.svg\" alt=\"delete\"></div></div>";
+    html = $.parseHTML( str );
+     $(e).append(html);
+     }
     else{
         
     }
@@ -173,6 +178,12 @@ function backToBlock(e){
     else if(e === "button"){
         $(".block-body-button").removeClass("in");
         $(".buttonNowEditing").removeClass("buttonNowEditing");
+        dataEditor("false");
+    }
+    else if(e === "html"){
+        $(".block-body-html").removeClass("in");
+        $(".htmlNowEditing").html(CopiedHtmlData);
+        $(".htmlNowEditing").removeClass("htmlNowEditing");
         dataEditor("false");
     }
    
@@ -278,6 +289,16 @@ $(document).on("mouseenter", ".indiButton", function(e) {
   });
 
 
+$(document).on("mouseenter", ".indiHtml", function(e) {
+             addContentSettings(this, "html");
+              });
+
+
+  $(document).on("mouseleave", ".indiHtml", function(e) {
+     removeContentSettings(this, "html");
+  });
+
+
 
 
     //Right side menu
@@ -295,16 +316,24 @@ var dddd = $(".addedEditables");
     if (data === "button"){
                 dddd.removeClass("indiText");
                 dddd.removeClass("indiImage");
+                dddd.removeClass("indiHtml");
                       }
      else if (data === "image"){
        
                dddd.removeClass("indiText");
                dddd.removeClass("indiButton");
+               dddd.removeClass("indiHtml");
               
         }
     else if (data === "text"){
                dddd.removeClass("indiButton");
                dddd.removeClass("indiImage");
+               dddd.removeClass("indiHtml");
+               }  
+    else if (data === "html"){
+               dddd.removeClass("indiButton");
+               dddd.removeClass("indiImage");
+               dddd.removeClass("indiText");
                }
     
 }
