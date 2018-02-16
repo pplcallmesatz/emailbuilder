@@ -360,37 +360,63 @@ var dddd = $(".addedEditables");
                 showInput: true
             });
             $("#pageBgColor").spectrum({
-                color: "#f00",
+                color: "rgb(230, 230, 230)",
                 preferredFormat: "rgb",
                 showInput: true
             });
             $("#cntBg").spectrum({
-                color: "#f00",
+                color: "rgb(255, 255, 255)",
                 preferredFormat: "rgb",
                 showInput: true
             });
-            
+             pageBgColor();
+            contentBg();
+            pagePaddingg();
             $("#pageBgColor").on("change", function(){
-                var bgCol = $("#pageBgColor").val();
-                $(".pageBgColor").val(bgCol);
-                $("#cards").css("background-color", bgCol);
+                pageBgColor();
             })   
 
-            $(".pagePaddingg").on("change", function(){
-                var pgPad = $(".pagePaddingg").val();
-                console.log(pgPad)
-                $("#cards").css("padding",  pgPad + "px");
+            $(".pagePaddingg").on("keyup", function(){
+               pagePaddingg();
             })
             $("#cntBg").on("change", function(){
             contentBg();
             });
 
+function pagePaddingg(){
+       var pgPad = $(".pagePaddingg").val();
+                $("#cards").css("padding",  pgPad + "px");
+}
 function contentBg(){
         var cntBg = $("#cntBg").val();
                 $(".cntBg").val(cntBg);
                 $("table").each(function(){
                    $(this).css("background-color", cntBg); 
                 });
+}
+
+function pageBgColor(){
+
+       var bgCol = $("#pageBgColor").val();
+                $(".pageBgColor").val(bgCol);
+                $("#cards").css("background-color", bgCol);
+}
+function resetEmailSetting(){
+    var pageBg = "rgb(230, 230, 230)";
+    var cntBg = "rgb(255, 255, 255)";
+    var pagePad = "10";
+    
+    $("#cntBg").val(cntBg);
+    $(".cntBg").val(cntBg);
+     $("table").each(function(){
+                   $(this).css("background-color", cntBg); 
+                });
+    $(".pagePaddingg").val(pagePad);
+    $("#cards").css("padding",pagePad+ "px");
+    
+    $("#pageBgColor").val(pageBg);
+    $("#cards").css("background-color", pageBg);
+    
 }
 
 

@@ -4,7 +4,8 @@ function htmlEdit(e, samp){
     resetEditable(e, "html");
     
     if (dataContent === "none"){
-        console.log(true);  
+//        console.log(true);  
+           alert("Please select the element in the left to add contents.")  
     }
     else {
         dataEditor("true");

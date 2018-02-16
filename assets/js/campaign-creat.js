@@ -38,11 +38,9 @@ width : 320,
   toolbar2: "hr | bullist numlist | outdent indent blockquote | undo redo | link unlink | forecolor backcolor",
   content_css: [],
     init_instance_callback : function(editor) {
-    console.log("Editor: " + editor.id + " is now initialized.");
   },
                   setup: function(editor) {
     editor.on('change', function(e) {        
-        console.log("change");
         change();
     });
   }
@@ -73,10 +71,6 @@ if(dataEditor != "true"){
     else{
         alert("already in editor");
     }
-  
-    
-   
-//    textEdit(e, "samp");
 }
 
 
@@ -84,7 +78,6 @@ if(dataEditor != "true"){
 //Clickable class to parent-div
 function clickableParent(e){
     console.log($("#cards > .parent-div").length);
-//   console.log($(e).parent().attr);
     $(".parent-div").each(function(){
         
         $(this).removeClass("currentActive").addClass("alreadyClicked");
@@ -95,7 +88,6 @@ function clickableParent(e){
 //Clickable class to parent-div
 function clickableParentEdit(e){
     console.log($("#cards > .parent-div").length);
-//   console.log($(e).parent().attr);
     $(".parent-div").each(function(){
         
         $(this).removeClass("currentActive").addClass("alreadyClicked");
@@ -121,7 +113,6 @@ function addData(e){
                         html = $.parseHTML( str );
     
     var addingNew = $(e).parent().parent().addClass("forAddEmpty").attr("class");
-    console.log(addingNew);
     $(html).insertAfter(".forAddEmpty");
     $(".forAddEmpty").removeClass("forAddEmpty");
 }
@@ -133,8 +124,17 @@ function textEdit(e, samp){
     resetEditable(e, "text");
     
     if (dataContent === "none"){
-        tabposition("layouts");
-        alert("Please select the layout to add contents.")  
+
+        
+        
+        var cardLength = $(".parent-div").length;
+        if (cardLength < 1){
+            tabposition("layouts");
+            alert("Add the layout to add contents.");
+        }
+        else{
+            alert("Please select the element in the left to add contents.")  
+        }
         
     }
     else {
@@ -168,7 +168,6 @@ function editData(e){
     var ddddd = $(e).parent().prev().attr("class");
     CopiedData = $(".textContent").html();
     var rr = $(".textContent").attr("data-text");
-    console.log(rr);
     tabposition("blocks");
         $(".block-body-text").addClass("in");
     if(rr === "edited"){
@@ -187,16 +186,13 @@ function editData(e){
 }
 
 $(".editor").keyup(function(){
-    
     var htmll = $(this).html();
-    console.log(htmll);
     $(".textContent").html(htmll);
 });
 
 //Make clickable 
 
 function change(){
-    console.log("changecalled");
     var hm = $(".editor").html();
     $(".textContent").html(hm);
 }
@@ -254,8 +250,6 @@ function saveText(e){
         $(".currentEditing").removeClass("currentEditing");
         $(".addedEditables").removeClass("addedEditables");
         $(".imageUrl").removeClass("imageUrl");
-        
-//        $("[data-text=\"newEdit\"]").attr("data-text","edited");
         removeLayoutSettingElementSupport();
         $("#cards").attr("data-content", "none");
         dataEditor("false");
@@ -300,7 +294,6 @@ function deleteData(e){
     
     var deleteData = $(".deleteDataContent").html();
     if(deleteData === ""){
-//        console.log("true");
                $(".deleteDataContent").append(html)
         $(".deleteDataContent").removeClass("deleteDataContent");
     }

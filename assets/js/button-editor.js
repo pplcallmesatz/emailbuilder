@@ -3,17 +3,14 @@ function buttonEdit(e, samp){
     var dataContent = $("#cards").attr("data-content");
     resetEditable(e, "button");
     
-    if (dataContent === "none"){
-        console.log(true);  
+    if (dataContent === "none"){ 
+           alert("Please select the element in the left to add contents.")  
     }
     else {
         dataEditor("true");
         $(".addedEditables").attr("style","");
         $(".addedEditables").attr("onClick","");
            $(".addedEditables").addClass("indiButton").removeClass("empty-content").html("<a href=\"http://www.google.com\" data-button=\"newEdit\" style=\"display:inline-block;background-color: red; color: #fff;padding-top: 10px; padding-bottom: 10px;padding-left: 10px; padding-right: 10px; text-decoration:none; border-radius:4px;\" class=\"buttonNowEditing\" target=\"_blank\" data-position=\"left\">Button</a>");
-//   $(".currentAdding").append("<div class=\"indiImage\"><img src=\"https://getuikit.com/v2/docs/images/placeholder_600x400.svg\" class=\"image-content\"  width=\"100%\" id=\"imageData\" alt=\"image\"></div>");
-      
-//        $(".currentAdding .empty-content").remove();
     $(".block-body-button").addClass("in");
         
             $(".currentAdding").each(function(){
@@ -27,7 +24,6 @@ function buttonEdit(e, samp){
 }
 
 function buttonEditData(e){
-// var ddd= $(e).parent().addClass("currentEditing").find(".textContent").attr("data-text");
     var dddd = $(e).parent().prev().addClass("buttonNowEditing");
     var ddddd = $(e).parent().prev().attr("class");
     
@@ -86,9 +82,6 @@ function buttonEditData(e){
         $("#textColor").val(btnTextColor);
         $("#textColor").next().find(".sp-preview-inner").css("background-color",btnTextColor);
         $("#btnBgColor").next().find(".sp-preview-inner").css("background-color",btnBackground);
-//        console.log(hhttmmll);
-//        $(".editor").html(hhttmmll);
-//        $(e).parent().addClass("currentEditing")
     }
     
     clickableParentEdit(e);
@@ -105,17 +98,14 @@ function trimAlphabets(paddingLeft){
 $(".btn-text").on("keyup , change", function(){
     var contentcheck = $(".buttonNowEditing").text();
     var textVal = $(this).val();
-//    console.log(textVal);
     $(".buttonNowEditing").text(textVal);
 });
 $(".btn-link").on("keyup , change", function(){
     var urlVal = $(this).val();
-//    console.log(urlVal);
     $(".buttonNowEditing").attr("href", urlVal);
 });
 $(".pad-tb").on("keyup , change", function(){
     var paddingVal = $(this).val();
-//    console.log(paddingVal);
     $(".buttonNowEditing").css({
         "padding-top": paddingVal + "px",
         "padding-bottom": paddingVal + "px",
@@ -123,7 +113,6 @@ $(".pad-tb").on("keyup , change", function(){
 });
 $(".pad-rl").on("keyup , change", function(){
     var paddingVal = $(this).val();
-//    console.log(paddingVal);
     $(".buttonNowEditing").css({
         "padding-left": paddingVal + "px",
         "padding-right": paddingVal + "px",
@@ -178,17 +167,3 @@ $("#textColor").on("change", function(){
     $(".buttonNowEditing").css("color", btnBg);
 });
 
-//buttonNowEditing
-//
-//btn-text
-//btn-link
-//
-//btn-color
-//btn-text-color
-//pad-tb
-//pad-rl
-//
-//btnLeft()
-//btnRight()
-//btnCenter()
-//btnBlock()

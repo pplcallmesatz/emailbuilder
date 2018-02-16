@@ -50,7 +50,7 @@ function pageEmptyContent(e){
     
 //    console.log(initial);
                     
-                    var pageEmpty = "<div class=\"drag-here\">Drag and D rop Content Cards to Create your Page</div>";
+                    var pageEmpty = "<div class=\"drag-here\">Drag and Drop Content Cards to Create your Page</div>";
                     if(initial > 0) {
                        $(".drag-here").remove();
                     }
