@@ -10,7 +10,7 @@ function buttonEdit(e, samp){
         dataEditor("true");
         $(".addedEditables").attr("style","");
         $(".addedEditables").attr("onClick","");
-           $(".addedEditables").addClass("indiButton").removeClass("empty-content").html("<a href=\"http://www.google.com\" data-button=\"newEdit\" style=\"display:inline-block;background-color: red; color: #fff;padding-top: 10px; padding-bottom: 10px;padding-left: 10px; padding-right: 10px; text-decoration:none; border-radius:4px;\" class=\"buttonNowEditing\" target=\"_blank\" data-position=\"left\">Button</a>");
+           $(".addedEditables").addClass("indiButton").removeClass("empty-content").html("<a href=\"#\" data-button=\"newEdit\" style=\"display:inline-block;background-color: red; color: #fff;padding-top: 10px; padding-bottom: 10px;padding-left: 10px; padding-right: 10px; text-decoration:none; border-radius:4px;\" class=\"buttonNowEditing\" target=\"_blank\" data-position=\"left\">Button</a>");
     $(".block-body-button").addClass("in");
         
             $(".currentAdding").each(function(){
@@ -49,7 +49,6 @@ function buttonEditData(e){
 
         var btnPosition  = $(e).parent().parent().addClass("currentEditing").attr("data-position");
         
-        console.log(btnPosition)
         if(btnPosition === "left"){
             buttonPlacementActiveToggler()
             $(".bLeft").addClass("active");
@@ -100,10 +99,17 @@ $(".btn-text").on("keyup , change", function(){
     var textVal = $(this).val();
     $(".buttonNowEditing").text(textVal);
 });
-$(".btn-link").on("keyup , change", function(){
-    var urlVal = $(this).val();
-    $(".buttonNowEditing").attr("href", urlVal);
+$(".btn-link").on("keyup , change", function(e){
+//    var urlVal = $(this).val();
+     var input = $(this);
+    var val = input.val();
+    if (val && !val.match(/^.+:\/\/.*/)) {
+        input.val('http://' + val);
+    }
+    var btnUrlVal = $(".btn-link").val();
+     $(".buttonNowEditing").attr("href", btnUrlVal);
 });
+
 $(".pad-tb").on("keyup , change", function(){
     var paddingVal = $(this).val();
     $(".buttonNowEditing").css({

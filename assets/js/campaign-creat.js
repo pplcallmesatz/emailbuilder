@@ -82,7 +82,12 @@ function clickableParent(e){
         
         $(this).removeClass("currentActive").addClass("alreadyClicked");
     });
-    var d = $(e).parents().eq(4).addClass("currentActive").removeClass("alreadyClicked");
+    var d = $(e).parents().eq(4);
+    d.addClass("currentActive");
+    d.removeClass("alreadyClicked");
+    var s =d.attr("data-card");
+    console.log(s);
+  
     
 }
 //Clickable class to parent-div
@@ -92,8 +97,11 @@ function clickableParentEdit(e){
         
         $(this).removeClass("currentActive").addClass("alreadyClicked");
     });
-    var d = $(e).parents().eq(6).addClass("currentActive").removeClass("alreadyClicked");
-    
+    var d = $(e).parents().eq(6);
+    d.addClass("currentActive");
+    d.removeClass("alreadyClicked");
+    var s =d.attr("data-card");
+    console.log(s);
 }
 
 
@@ -254,6 +262,7 @@ function saveText(e){
         $("#cards").attr("data-content", "none");
         dataEditor("false");
           var input = $("#inp");
+       $(".img-url").val("");
             var fileName = input.val();
     if(fileName) { // returns true if the string is not empty
         input.val('');
