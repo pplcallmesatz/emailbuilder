@@ -22,7 +22,7 @@ function addLayoutSettingElement(e) {
     
     }
     else {
-    var layoutLength = $(".parent-div .layoutAction").length;
+    var layoutLength = $(e).find(".layoutAction").length;
     if(layoutLength === 0){
      var  str = "<div class=\"layoutAction\"><div class=\"drag-handle\"><img src=\"assets/img/move.svg\"></div><div class=\"delete-handle\"  onclick=\"deleteLayout($(this))\"><img src=\"assets/img/trash.svg\"></div></div>",
                      html = $.parseHTML( str );
